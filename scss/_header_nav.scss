@@ -1,0 +1,38 @@
+.m-nav {
+    margin-top: 110px;
+}
+
+.scroll {
+    background-color: $gris-dark;
+}
+
+
+.naav {
+    transition: .5s all;
+
+    .container {
+        a{
+            img{
+                width: 250px;
+            }
+        }
+        .cont{
+            width: 100%;  
+
+            li{
+                a{
+                    text-align: center;
+                    background-color: #baa256;
+                    width: 100px;
+                    margin: 0 1em;
+                    clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+                    font-size: 1.2rem;
+                    color: white;
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+
+}

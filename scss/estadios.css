@@ -1,0 +1,159 @@
+@charset "UTF-8";
+.stadiums {
+  width: 100%;
+  height: 100vh;
+  background: url(../../img/lusail-stadium.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.stadiums-top {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.stadiums-top h1 {
+  background-color: #8a1539;
+  width: 300px;
+  color: white;
+}
+
+.div-est {
+  width: 100%;
+  background: transparent;
+  margin: 0;
+}
+
+.stadiums-main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 70vh;
+}
+.stadiums-main .stadiums-main-info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 550px;
+  transition: all 1s;
+}
+.stadiums-main .stadiums-main-info h3 {
+  font-size: 2.5rem;
+  color: #8a1539;
+  font-weight: 900;
+}
+.stadiums-main .stadiums-main-info h4 {
+  font-size: 1.5rem;
+  color: #baa256;
+  font-weight: 900;
+}
+.stadiums-main .stadiums-main-info p {
+  width: 300px;
+  font-size: 1.5rem;
+  color: rgb(100, 100, 100);
+  text-align: center;
+}
+.stadiums-main .stadiums-main-info .part-tittle {
+  font-size: 2rem;
+  color: rgb(30, 30, 30);
+}
+.stadiums-main .stadiums-main-info .part {
+  font-weight: 600;
+  border: 2px gray solid;
+  font-size: 1.4rem;
+  color: #8a1539;
+  height: 100px;
+  width: 300px;
+  text-align: center;
+}
+.stadiums-main .stadiums-main-info .btn-est {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #8a1539;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2rem;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+  height: 75px;
+}
+.stadiums-main .stadiums-main-info .btn-est span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.stadiums-main .stadiums-main-info .btn-est span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.stadiums-main .stadiums-main-info .btn-est:hover span {
+  padding-right: 25px;
+}
+.stadiums-main .stadiums-main-info .btn-est:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.stadiums-main .stadiums-main-img {
+  background: white;
+}
+
+#pag-estadios {
+  background-color: white;
+}
+
+.est-start {
+  height: 60vh;
+  background: url(/img/al-bayt-2.webp);
+  background-position: 30% 40%;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.est-start h1 {
+  margin-top: 100px;
+  color: #baa256;
+  font-weight: bold;
+  font-size: 8rem;
+  padding: auto;
+}
+.est-start p {
+  padding-top: 50px;
+  max-width: 200px;
+  color: white;
+  font-size: 1rem;
+}
+
+.separator img {
+  background-color: #baa256;
+  height: 100px;
+  width: 100%;
+}
+
+.est-match {
+  display: flex;
+}
+.est-match p {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #baa256;
+  text-align: center;
+  border: 3px solid #baa256;
+}
+
+.est-match-div {
+  background-color: #baa256;
+}/*# sourceMappingURL=estadios.css.map */

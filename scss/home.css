@@ -1,0 +1,1885 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+body {
+  width: 100%;
+  background: url(https://static.vecteezy.com/system/resources/previews/004/541/666/non_2x/football-2022-tournament-background-illustration-football-pattern-for-banner-card-website-burgundy-color-national-flag-qatar-vector.jpg) no-repeat center center fixed;
+}
+
+.b-g-white {
+  background-color: white;
+}
+
+.space {
+  width: 100%;
+  background: url(../img/space.png);
+  background-color: #baa256;
+}
+
+.space-2 {
+  width: 100%;
+  height: 50px;
+  background: url(../img/separador-2.png);
+}
+
+.separator-diamond {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.separator-diamond div {
+  margin: 0 15px;
+  background: #baa256;
+  height: 10px;
+  width: 10px;
+  rotate: 45deg;
+}
+.separator-diamond div:nth-child(1) {
+  width: 35%;
+  height: 2px;
+  rotate: 0deg;
+}
+.separator-diamond div:nth-child(5) {
+  width: 35%;
+  height: 2px;
+  rotate: 0deg;
+}
+.separator-diamond div:nth-child(3) {
+  width: 20px;
+  height: 20px;
+}
+
+.separator {
+  border: 1px solid rgba(200, 200, 200, 0.548);
+  height: 1px;
+  width: 80%;
+  background-color: rgba(200, 200, 200, 0.548);
+}
+
+.separator-gold {
+  border: 1px solid rgba(200, 200, 200, 0.548);
+  height: 1px;
+  width: 80%;
+  background-color: rgba(255, 217, 0, 0.404);
+}
+
+.separator-2 {
+  border: 1px solid #e6e6e6;
+  height: 2px;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+
+.separator-2-est {
+  height: 2px;
+  width: 100%;
+  background-color: #e6e6e6;
+  margin: 15px 0;
+}
+
+.separator-3 img {
+  background-color: #baa256;
+  height: 100px;
+  width: 100%;
+}
+
+.separator-large-gold {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #baa256, white);
+}
+
+.separator-large-blue {
+  height: 20px;
+  width: 100%;
+  background: linear-gradient(to right, #020f2a 50%, black);
+}
+
+/*
+<div class="box">
+	<div class="lines">
+		<div class="circle"></div>
+	</div>
+</div>
+*/
+.box {
+  padding: 20px;
+  transition: 0.5s;
+}
+.box:hover .diamond {
+  background-color: #baa256;
+  cursor: pointer;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+}
+.box:hover .lines {
+  width: 50%;
+}
+
+.lines {
+  width: 100%;
+  position: relative;
+  padding: 10px;
+  transition: 1s;
+}
+
+.lines::after,
+.lines::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: #fff;
+  width: 45%;
+  top: 45%;
+}
+
+.lines::after {
+  left: 0;
+}
+
+.lines::before {
+  right: 0;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.diamond {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(45deg);
+  transition: 1s;
+}
+
+.fifa-world-cup {
+  display: block;
+  background-color: transparent;
+}
+.fifa-world-cup img {
+  width: 50px;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+}
+
+.fondo-francia {
+  background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.2) 33%, rgba(255, 255, 255, 0.2) 33%, rgba(255, 255, 255, 0.2) 66.66%, rgba(0, 0, 255, 0.2) 66.66%);
+  border-radius: 2%;
+}
+
+.fondo-alemania {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 33%, rgba(255, 0, 0, 0.2) 33%, rgba(255, 0, 0, 0.2) 66.66%, rgba(255, 255, 0, 0.2) 66.66%);
+  border-radius: 2%;
+}
+
+.fondo-japon {
+  background-image: radial-gradient(circle, rgba(255, 0, 0, 0.2) 33%, rgba(255, 255, 255, 0.2) 33%, rgba(255, 255, 255, 0.2));
+  border-radius: 2%;
+}
+
+.fondo-paises-bajos {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.2) 33%, rgba(255, 255, 255, 0.2) 33%, rgba(255, 255, 255, 0.2) 66.66%, rgba(5, 50, 255, 0.2) 66.66%);
+  border-radius: 2%;
+}
+
+.fondo-españa {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.2) 27%, rgba(255, 255, 0, 0.2) 27%, rgba(255, 255, 0, 0.2) 73%, rgba(255, 0, 0, 0.2) 73%);
+  border-radius: 2%;
+}
+
+.fondo-costa-rica {
+  background-image: linear-gradient(rgba(5, 84, 255, 0.2) 17%, rgba(255, 255, 255, 0.2) 17%, rgba(255, 255, 255, 0.2) 33%, rgba(255, 0, 0, 0.2) 33%, rgba(255, 0, 0, 0.2) 66%, rgba(255, 255, 255, 0.2) 66%, rgba(255, 255, 255, 0.2) 83%, rgba(5, 84, 255, 0.2) 83%);
+  border-radius: 2%;
+}
+
+.fondo-belgica {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 33%, rgba(255, 255, 0, 0.2) 33%, rgba(255, 255, 0, 0.2) 66.66%, rgba(255, 0, 0, 0.2) 66.66%);
+  border-radius: 2%;
+}
+
+.fondo-canada {
+  background: url(../img/Sin\ título-2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.fondo-croacia {
+  background: url(../img/Sin\ título-22.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-ecuador {
+  background: url(../img/Sin\ título-20.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-senegal {
+  background: url(../img/Sin\ título-5.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.fondo-qatar {
+  background: url(../img/Sin\ título-21.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-gales {
+  background: url(../img/Sin\ título-7.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.fondo-marruecos {
+  background: url(../img/Sin\ título-3.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-iran {
+  background: url(../img/Sin\ título-23.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-argentina {
+  background-image: linear-gradient(rgba(5, 120, 255, 0.2) 28%, rgba(255, 255, 255, 0.2) 28%, rgba(255, 255, 255, 0.2) 73%, rgba(5, 120, 255, 0.2) 73%);
+  border-radius: 2%;
+}
+
+.fondo-arabia {
+  background: url(../img/Sin\ título-9.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-polonia {
+  background: linear-gradient(rgba(255, 255, 255, 0.2) 50%, rgba(255, 0, 0, 0.2) 50%);
+  border-radius: 2%;
+}
+
+.fondo-eeuu {
+  background: url(../img/Sin\ título-4.png);
+  background-size: cover;
+  background-position-y: 40%;
+  border-radius: 2%;
+}
+
+.fondo-mexico {
+  background: url(../img/Sin\ título-1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-ing {
+  background: url(../img/Sin\ título-6.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-australia {
+  background: url(../img/Sin\ título-8.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-dinamarca {
+  background: url(../img/Sin\ título-10.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-tunez {
+  background: url(../img/Sin\ título-11.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-brasil {
+  background: url(../img/Sin\ título-12.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-serbia {
+  background: url(../img/Sin\ título-13.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2%;
+}
+
+.fondo-suiza {
+  background: url(../img/Sin\ título-14.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-camerun {
+  background: url(../img/Sin\ título-15.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-portugal {
+  background: url(../img/Sin\ título-16.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-ghana {
+  background: url(../img/Sin\ título-17.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-uruguay {
+  background: url(../img/Sin\ título-18.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.fondo-corea {
+  background: url(../img/Sin\ título-19.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.lines {
+  width: 50%;
+  position: relative;
+  margin: 0;
+  padding: 10px;
+}
+
+.lines::after,
+.lines::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: #fff;
+  width: 45%;
+  top: 45%;
+}
+
+.lines::after {
+  left: 0;
+}
+
+.lines::before {
+  right: 0;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.diamond {
+  height: 30px;
+  width: 30px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(45deg);
+  transition: 1s;
+}
+.diamond:hover {
+  cursor: pointer;
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+}
+
+.algo {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #fff;
+  left: 0;
+  right: 0;
+}
+
+.d-f {
+  display: flex;
+}
+
+.m-nav {
+  margin-top: 110px;
+}
+
+.scroll {
+  background-color: #121212;
+}
+
+.naav {
+  transition: 0.5s all;
+}
+.naav .container a img {
+  width: 250px;
+}
+.naav .container .cont {
+  width: 100%;
+}
+.naav .container .cont li a {
+  text-align: center;
+  background-color: #baa256;
+  width: 100px;
+  margin: 0 1em;
+  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #020f2a;
+}
+
+.fifa-socios {
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #baa256;
+}
+.fifa-socios img {
+  max-width: 10%;
+}
+
+.footer {
+  padding: 5% 0;
+  background: #020f2a;
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer img {
+  width: 30%;
+}
+.footer .footer-section {
+  width: 30%;
+  display: flex;
+  flex-flow: column, nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .footer-section h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #baa256;
+}
+.footer .footer-section a {
+  font-size: 1.5rem;
+  color: #baa256;
+  text-decoration: none;
+  transition: 1s all;
+}
+.footer .footer-section a:hover {
+  color: white;
+}
+.footer .footer-section img {
+  background-color: #000;
+  width: 10px;
+}
+
+#exp {
+  background: #fff;
+  height: 300vh;
+}
+
+.video video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.button {
+  --offset: 0.8em;
+  --border-size: 1px;
+  display: block;
+  position: relative;
+  padding: 1.75em 2.5em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background: transparent;
+  color: #baa256;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  transition: background 0.8s ease;
+}
+.button:hover {
+  background: rgba(100, 0, 0, 0.03);
+}
+.button__horizontal, .button__vertical {
+  position: absolute;
+  top: var(--horizontal-offset, 0);
+  right: var(--vertical-offset, 0);
+  bottom: var(--horizontal-offset, 0);
+  left: var(--vertical-offset, 0);
+  transition: transform 0.8s ease;
+  will-change: transform;
+}
+.button__horizontal::before, .button__vertical::before {
+  content: "";
+  position: absolute;
+  border: inherit;
+}
+.button__horizontal {
+  --vertical-offset: calc(var(--offset) * -1);
+  border-top: var(--border-size) solid currentcolor;
+  border-bottom: var(--border-size) solid currentcolor;
+}
+.button__horizontal::before {
+  top: calc(var(--vertical-offset) - var(--border-size));
+  bottom: calc(var(--vertical-offset) - var(--border-size));
+  left: calc(var(--vertical-offset) * -1);
+  right: calc(var(--vertical-offset) * -1);
+}
+.button:hover .button__horizontal {
+  transform: scaleX(0);
+}
+.button__vertical {
+  --horizontal-offset: calc(var(--offset) * -1);
+  border-left: var(--border-size) solid currentcolor;
+  border-right: var(--border-size) solid currentcolor;
+}
+.button__vertical::before {
+  top: calc(var(--horizontal-offset) * -1);
+  bottom: calc(var(--horizontal-offset) * -1);
+  left: calc(var(--horizontal-offset) - var(--border-size));
+  right: calc(var(--horizontal-offset) - var(--border-size));
+}
+.button:hover .button__vertical {
+  transform: scaleY(0);
+}
+.button a {
+  text-decoration: none;
+  color: #baa256;
+}
+
+.des-doha {
+  width: 100%;
+  height: 10em;
+  background-color: #8a1539;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.banner-exp {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+}
+.banner-exp .exp-b-img-p {
+  background: url(../img/patrimonio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  width: 50%;
+}
+.banner-exp .exp-b-img-cu {
+  background: url(../img/cultura.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  width: 50%;
+}
+.banner-exp .exp-b-img-co {
+  background: url(../img/comida.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 420px;
+  width: 50%;
+}
+.banner-exp .pat-info {
+  display: flex;
+  flex-flow: column, nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 3em;
+  width: 50%;
+}
+.banner-exp .pat-info h2 {
+  font-size: 3rem;
+  color: #baa256;
+  font-weight: 700;
+}
+.banner-exp .pat-info p {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+.banner-exp .pat-info button {
+  font-weight: 700;
+  width: 150px;
+}
+
+.exp-c-p {
+  -webkit-clip-path: polygon(0 42%, 0 0, 100% 0, 100% 100%, 0 100%, 0 58%, 5% 50%);
+          clip-path: polygon(0 42%, 0 0, 100% 0, 100% 100%, 0 100%, 0 58%, 5% 50%);
+}
+
+.exp-pat-top {
+  background: url(https://s1.significados.com/foto/desierto.-camello.jpg);
+  background-position: 40% 58%;
+  height: 80vh;
+  display: flex;
+  flex-flow: column, nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.exp-pat-top h1 {
+  margin: 0 0 0 40%;
+  font-size: 6rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.pat-banner-text {
+  margin-top: 1%;
+  height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pat-banner-text h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #505050;
+}
+.pat-banner-text p {
+  font-size: 1.5rem;
+  width: 80%;
+  color: #505050;
+}
+
+.pat-banner-img {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 1%;
+}
+.pat-banner-img div {
+  width: 35%;
+  height: 309px;
+  padding: 5px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 42%, 95% 50%, 100% 58%, 100% 100%, 0 100%, 0 58%, 5% 50%, 0 42%);
+          clip-path: polygon(0 0, 100% 0, 100% 42%, 95% 50%, 100% 58%, 100% 100%, 0 100%, 0 58%, 5% 50%, 0 42%);
+}
+.pat-banner-img div img {
+  width: 100%;
+  height: 100%;
+}
+
+.exp-cul-top {
+  background: url(https://www.visitqatar.qa/content/dam/visitqatar/campaigns/gc/paid-campaign/backgrounds/18944_DigitalAssetsSupply_1920x1080_All_Without_Keychain6.jpg/_jcr_content/renditions/medium-1280px.jpeg);
+  background-position: 20% 45%;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-flow: column, nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.exp-cul-top h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.exp-com-top {
+  background: url(https://hospitality.fifa.com/media/3126/header_cuisine.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-flow: column, nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.exp-com-top h1 {
+  margin: 5% 0 0 0;
+  font-size: 6rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+#stadiumsss {
+  background: #fff;
+}
+
+.stadiums {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/lusail-stadium.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.stadiums-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+.stadiums-top h1 {
+  margin-top: 2em;
+  text-shadow: 2px 2px 10px rgba(186, 162, 86, 0.6);
+  width: 70%;
+  font-size: 5em;
+  color: #e6e6e6;
+}
+.stadiums-top p {
+  background: linear-gradient(to right, #baa256, white);
+  font-size: 1.8rem;
+  color: rgb(50, 50, 50);
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.div-est {
+  width: 100%;
+  background: white;
+}
+
+.stadiums-main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 70vh;
+  background-color: white;
+}
+.stadiums-main .stadiums-main-info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 35%;
+  transition: all 1s;
+}
+.stadiums-main .stadiums-main-info h3 {
+  font-size: 2.5rem;
+  color: #8a1539;
+  font-weight: 900;
+}
+.stadiums-main .stadiums-main-info h4 {
+  font-size: 1.5rem;
+  color: #baa256;
+  font-weight: 900;
+}
+.stadiums-main .stadiums-main-info p {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  font-size: 1.5rem;
+  color: rgb(100, 100, 100);
+}
+.stadiums-main .stadiums-main-info .part-tittle {
+  font-size: 2rem;
+  color: rgb(30, 30, 30);
+}
+.stadiums-main .stadiums-main-info .part {
+  font-weight: 600;
+  border: 1px #e6e6e6 solid;
+  font-size: 1.4rem;
+  color: #8a1539;
+  height: 20%;
+  width: 70%;
+  text-align: center;
+}
+.stadiums-main .stadiums-main-info .btn-est {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #8a1539;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 2rem;
+  width: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+  height: 15%;
+}
+.stadiums-main .stadiums-main-info .btn-est span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.stadiums-main .stadiums-main-info .btn-est span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.stadiums-main .stadiums-main-info .btn-est:hover span {
+  padding-right: 25px;
+}
+.stadiums-main .stadiums-main-info .btn-est:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.stadiums-main .stadiums-main-info .btn-est span a {
+  text-decoration: none;
+  color: white;
+}
+.stadiums-main img {
+  max-width: 65%;
+  height: 100%;
+}
+
+.fifa-world-cup {
+  background-color: #8a1539;
+}
+
+#al-bayt {
+  width: 100%;
+  height: 300vh;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.est-start {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.est-start h1 {
+  color: #baa256;
+  text-shadow: 2px 2px 10px rgba(186, 162, 86, 0.6);
+  font-weight: bold;
+  font-size: 8rem;
+  padding: auto;
+  width: 100%;
+  text-align: center;
+}
+.est-start p {
+  text-align: center;
+  width: 50%;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+  font-size: 2.5rem;
+}
+
+.est-start-al-bayt {
+  background: url(/img/al-bayt-2.webp);
+  background-position: 30% 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.est-start-stadium-974 {
+  background: url(/img/stadium-974.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.est-start-lusail {
+  background: url(https://digitalhub.fifa.com/transform/ede226e4-43ff-4a4d-b476-47b31fbde53e/FIFA-Arab-Cup-Qatar-2021-December-16);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.est-start-khalifa {
+  background: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltdef108f90fe4ff04/61a70f71bd15000dedb4ae4b/5ff3af3604197b1967bd07f58b0f8dc321a2c7dc.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.est-start-ahmad-bin-ali {
+  background: url(https://www.worldcupsc.com/wp-content/uploads/2022/03/Ahmad-Bin-Ali-Stadium.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.est-start-al-janoub {
+  background: url(/img/al-janoub.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.est-start-al-thumama {
+  background: url(/img/Al-thumama.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.est-start-education {
+  background: url(https://img.asmedia.epimg.net/resizer/uHUfDQ_Ik3vRQf4hXjl95QIN0s8=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/IXX2EWZOVZND3HTEMCWC4SEC3E.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.video-est video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.est-info {
+  display: flex;
+  flex-flow: column, nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
+}
+.est-info .est-ficha {
+  height: 50%;
+  width: 70%;
+  background: #fff;
+}
+.est-info .est-ficha h2 {
+  padding: 1% 0;
+  font-size: 4rem;
+  color: #505050;
+}
+.est-info .est-ficha p {
+  font-size: 1.5rem;
+  color: #909090;
+}
+.est-info .est-ficha h3 {
+  font-size: 2rem;
+  color: #909090;
+}
+
+.est-match {
+  display: flex;
+  flex-flow: column, nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 3%;
+}
+.est-match .est-match-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.est-match .est-match-title img {
+  width: 30%;
+}
+.est-match .est-match-title h4 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #8a1539;
+}
+.est-match .est-match-title p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #baa256;
+}
+.est-match .est-match-info {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #8a1539;
+  font-weight: 500;
+}
+.est-match .est-match-info .partido {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.est-match .est-match-info .partido .match-div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2%;
+  height: 200px;
+  width: 45%;
+  border: 2px solid #e6e6e6;
+  -webkit-clip-path: polygon(5% 50%, 0 58%, 0 100%, 20% 100%, 30% 95%, 40% 100%, 60% 100%, 70% 95%, 80% 100%, 100% 100%, 100% 58%, 95% 50%, 100% 42%, 100% 0, 80% 0, 70% 5%, 60% 0, 40% 0, 30% 5%, 20% 0, 0 0, 0 42%);
+          clip-path: polygon(5% 50%, 0 58%, 0 100%, 20% 100%, 30% 95%, 40% 100%, 60% 100%, 70% 95%, 80% 100%, 100% 100%, 100% 58%, 95% 50%, 100% 42%, 100% 0, 80% 0, 70% 5%, 60% 0, 40% 0, 30% 5%, 20% 0, 0 0, 0 42%);
+  background-color: #000;
+}
+.est-match .est-match-info .partido .match-div span {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  font-size: 1.7rem;
+  color: #baa256;
+}
+.est-match .est-match-info .partido .match-div span div {
+  height: 10px;
+  width: 10px;
+  background-color: #baa256;
+  rotate: 45deg;
+}
+.est-match .est-match-info .partido .match-div span div:first-child {
+  height: 20px;
+  width: 20px;
+}
+.est-match .est-match-info .partido .match-div span img {
+  width: 50%;
+}
+.est-match .est-match-info .partido .match-div span p {
+  color: #505050;
+  font-size: 1.5rem;
+}
+
+.est-history-title {
+  color: #8a1539;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 3% 0;
+}
+
+.est-history {
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.est-history .h-img {
+  display: flex;
+  flex-flow: column, wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  padding: 1%;
+}
+.est-history .h-img img {
+  max-width: 100%;
+}
+.est-history .h-info {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.est-history .h-info .separator {
+  margin: 15px 0;
+}
+.est-history .h-info span {
+  width: 80%;
+  font-size: 2.5rem;
+  color: #baa256;
+}
+.est-history .h-info p {
+  font-size: 1.4rem;
+  width: 90%;
+}
+
+#grupos {
+  background: #020f2a;
+}
+
+#grupo-a {
+  background: #8a1539;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.cont-grup {
+  background-color: #020f2a;
+  width: 100%;
+}
+.cont-grup div {
+  height: 500px;
+  width: 300px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.cont-grup .grup {
+  margin-top: 40px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #e6e6e6;
+}
+.cont-grup .grup div:hover {
+  transform: scale(1.3);
+}
+.cont-grup .grup .equip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70px;
+  width: 90%;
+}
+.cont-grup .grup .equip p {
+  font-size: 2.3rem;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  opacity: 1;
+}
+.cont-grup .grup .equip img {
+  margin-left: 20px;
+  max-width: 70px;
+  max-height: 70px;
+}
+.cont-grup .grup .equip:nth-child(1) {
+  margin-top: 10px;
+}
+.cont-grup .grup button {
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.btn-nav-lines {
+  margin: 100px;
+  position: relative;
+  padding: 10px 25px;
+  border: none;
+  outline: none;
+  margin: 0;
+  background-color: #baa256;
+  color: black;
+  transition: 1s all;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn-nav-lines:hover {
+  color: white;
+}
+.btn-nav-lines span {
+  position: absolute;
+  background-color: white;
+  transition: 0.5s;
+}
+.btn-nav-lines span:nth-child(1) {
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: -100%;
+}
+.btn-nav-lines span:nth-child(2) {
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  right: -100%;
+}
+.btn-nav-lines span:nth-child(3) {
+  width: 3px;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+}
+.btn-nav-lines span:nth-child(4) {
+  width: 3px;
+  height: 100%;
+  right: 0;
+  top: -100%;
+}
+.btn-nav-lines:hover span:nth-child(1) {
+  left: 0;
+}
+.btn-nav-lines:hover span:nth-child(2) {
+  right: 0;
+}
+.btn-nav-lines:hover span:nth-child(3) {
+  bottom: 0;
+}
+.btn-nav-lines:hover span:nth-child(4) {
+  top: 0;
+}
+.btn-nav-lines a {
+  text-decoration: none;
+  color: #303030;
+  font-size: 20px;
+}
+
+/*  <button class="btn-nav-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <a href="../index.html">INICIO</a>
+    </button>
+    */
+.img-grup {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  background: url(../img/fondo-uno.jpg);
+}
+.img-grup img {
+  width: 90%;
+}
+
+.div-grupo {
+  background: #e6e6e6;
+  width: 100%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+.div-grupo h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #303030;
+  padding: 2% 0;
+}
+.div-grupo .div-grupo-1 {
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: none;
+  align-items: none;
+  width: 100%;
+}
+.div-grupo .div-grupo-1 .div-grupo-main {
+  width: 65%;
+  margin: 0 1%;
+}
+.div-grupo .div-grupo-1 .div-grupo-main h2 {
+  text-align: center;
+  font-size: 5rem;
+  color: #8a1539;
+  margin: 0;
+  padding: 1% 0;
+  border-radius: 5px;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .first {
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: none;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .first img {
+  width: 70%;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .first p {
+  width: 30%;
+  padding: auto;
+  color: #505050;
+  font-size: 1.5rem;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .historial-team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .historial-team h3 {
+  font-size: 3rem;
+  color: #8D1B3D;
+  text-align: center;
+  margin: 1% 0;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .historial-team .historial-team-div {
+  height: 40vh;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .historial-team .historial-team-div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #303030;
+  transition: 0.5s all;
+  border-radius: 2px;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .historial-team .historial-team-div div p {
+  font-size: 2rem;
+  color: rgb(92, 0, 0);
+  transition: 0.5s all;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .historial-team .historial-team-div div:hover {
+  background-color: #000;
+  background-size: cover;
+  color: #baa256;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .historial-team .historial-team-div div:hover p {
+  color: #baa256;
+}
+.div-grupo .div-grupo-1 .accordion-button:focus {
+  box-shadow: none;
+}
+.div-grupo .div-grupo-1 .info-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  background-color: #020f2a;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.div-grupo .div-grupo-1 .info-team .fixture {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  padding: 0;
+  margin: 0;
+  background: #020f2a;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.div-grupo .div-grupo-1 .info-team .fixture h2 button {
+  background: transparent;
+}
+.div-grupo .div-grupo-1 .info-team .fixture .fixture-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.div-grupo .div-grupo-1 .info-team .fixture .fixture-title p {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+.div-grupo .div-grupo-1 .info-team .fixture .fixture-title img {
+  width: 50px;
+}
+.div-grupo .div-grupo-1 .info-team .fixture .fixture-info {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+  width: 100%;
+}
+.div-grupo .div-grupo-1 .info-team .fixture .fixture-info div {
+  width: 80%;
+  margin: 1% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.div-grupo .div-grupo-1 .info-team .fixture .fixture-info div p {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+.div-grupo .div-grupo-1 .info-team .fixture .fixture-info div img {
+  width: 50px;
+}
+.div-grupo .div-grupo-1 .info-team .preset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #333;
+  border-bottom: 1px solid white;
+}
+.div-grupo .div-grupo-1 .info-team .preset button {
+  background: #020f2a;
+  margin: 0;
+}
+.div-grupo .div-grupo-1 .info-team .preset p {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.div-grupo .div-grupo-1 .info-team .preset div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.div-grupo .div-grupo-1 .info-team .preset div p {
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 2% 0;
+}
+.div-grupo .div-grupo-1 .info-team .more-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 2%;
+}
+.div-grupo .div-grupo-1 .info-team .more-info div {
+  border-radius: 5px;
+  background-color: rgba(6, 40, 114, 0.3490196078);
+  margin: 5px;
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+}
+.div-grupo .accordion-team {
+  width: 100%;
+}
+.div-grupo .accordion-body {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #exp .separator-2 {
+    margin: 1em 0;
+  }
+  .banner-exp {
+    flex-flow: column wrap;
+  }
+  .banner-exp .exp-b-img-p {
+    width: 100%;
+  }
+  .banner-exp .exp-b-img-cu {
+    width: 100%;
+  }
+  .banner-exp .exp-b-img-co {
+    width: 100%;
+  }
+  .banner-exp .pat-info {
+    width: 100%;
+  }
+  .banner-exp .pat-info p {
+    margin-bottom: 30px;
+  }
+  .exp-pat-top {
+    background-position: 10% 70%;
+  }
+  .exp-pat-top h1 {
+    margin: 0;
+  }
+  .pat-banner-text {
+    padding: 30px 0;
+    height: 55vh;
+  }
+  .pat-banner-text h2 {
+    font-size: 2.5rem;
+    width: 80%;
+  }
+  .pat-banner-img {
+    flex-direction: column;
+  }
+  .pat-banner-img div {
+    width: 100%;
+  }
+  .est-start {
+    justify-content: flex-end;
+  }
+  .est-start h1 {
+    font-size: 5rem;
+  }
+  .est-start p {
+    font-size: 2rem;
+    width: 80%;
+  }
+  .est-match .est-match-title img {
+    width: 70%;
+  }
+  .est-match .est-match-info .partido {
+    flex-direction: column;
+  }
+  .est-match .est-match-info .partido .match-div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .naav {
+    background: #020f2a;
+    justify-content: center;
+  }
+  .naav .container a img {
+    width: 200px;
+  }
+  .naav .container .icon {
+    filter: invert(1);
+  }
+  .naav .container .cont {
+    background-color: #020f2a;
+    margin: 0;
+  }
+  .naav .container .cont li {
+    background-color: aqua;
+    border: 0.5px solid white;
+    margin: 1.5em;
+  }
+  .naav .container .cont li a {
+    margin: 0;
+    background-color: #020f2a;
+    -webkit-clip-path: none;
+            clip-path: none;
+    font-size: 2em;
+    width: 100%;
+    transition: 0.5s all;
+  }
+  .naav .container .cont li a:hover {
+    background-color: #baa256;
+    color: black;
+  }
+  .div-est .stadiums-main {
+    flex-flow: column-reverse nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .div-est .stadiums-main .stadiums-main-info {
+    width: 100%;
+    height: 50vh;
+    margin: 20px 0;
+  }
+  .div-est .stadiums-main .stadiums-main-info .part {
+    height: 40%;
+  }
+  .div-est .stadiums-main .stadiums-main-info .btn-est {
+    height: 70px;
+  }
+  .div-est img {
+    max-width: 100%;
+  }
+  .est-history {
+    flex-direction: column;
+    height: auto;
+  }
+  .est-history .h-img {
+    width: 100%;
+  }
+  .est-history .h-info {
+    width: 100%;
+    padding: 5%;
+  }
+  .div-grupo .div-grupo-1 {
+    flex-direction: column;
+  }
+  .div-grupo .div-grupo-1 .div-grupo-main {
+    margin: 0;
+    width: 100%;
+  }
+  .div-grupo .div-grupo-1 .info-team {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .naav .container a img {
+    width: 150px;
+  }
+  .footer {
+    padding: 2%;
+    flex-direction: column;
+  }
+  .footer .footer-section {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .footer img {
+    width: 50%;
+  }
+  .exp-com-top h1 {
+    font-size: 4rem;
+  }
+}
+.navbar {
+  align-items: center;
+  color: #e6e6e6;
+}
+
+.btn-nav {
+  height: 50px;
+  color: #e6e6e6;
+  width: 150px;
+  background: #baa256;
+  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+}
+
+.dropdown-item:hover {
+  color: #e6e6e6;
+  background-color: #baa256;
+}
+
+.group-text {
+  background-color: #baa256;
+  padding: 1.25em;
+}
+.group-text h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(30, 30, 30);
+}
+.group-text p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(30, 30, 30);
+  margin: 0;
+  padding: 0;
+}
+
+.index-estadio {
+  background-image: url(../img/estadio-final.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.index-estadio div {
+  -webkit-clip-path: polygon(5% 50%, 0 58%, 0 100%, 20% 100%, 30% 95%, 40% 100%, 60% 100%, 70% 95%, 80% 100%, 100% 100%, 100% 58%, 95% 50%, 100% 42%, 100% 0, 80% 0, 70% 5%, 60% 0, 40% 0, 30% 5%, 20% 0, 0 0, 0 42%);
+          clip-path: polygon(5% 50%, 0 58%, 0 100%, 20% 100%, 30% 95%, 40% 100%, 60% 100%, 70% 95%, 80% 100%, 100% 100%, 100% 58%, 95% 50%, 100% 42%, 100% 0, 80% 0, 70% 5%, 60% 0, 40% 0, 30% 5%, 20% 0, 0 0, 0 42%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(119, 102, 48, 0.8431372549);
+  border: 2px solid #baa256;
+  padding: 1%;
+  margin-bottom: 30px;
+  border-radius: 5%;
+}
+.index-estadio h2 {
+  width: 300px;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+.index-estadio a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+.index-estadio a:hover {
+  color: #8a1539;
+}
+.index-estadio button {
+  width: 50%;
+  font-size: 2rem;
+  border: 1px solid white;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  border-radius: 5%;
+  transition: 1s all;
+}
+.index-estadio button:hover {
+  background-color: #8a1539;
+}
+
+.fixture {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 1% 1%;
+}
+
+.grupos {
+  background-color: #e6e6e6;
+  width: 30rem;
+  margin: 15px;
+  border-radius: 25%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+}
+.grupos p {
+  font-size: 3em;
+  margin: 5% 0;
+}
+
+.equipos {
+  display: flex;
+  background-color: rgba(255, 217, 0, 0.404);
+  margin: 0 20px 30px 20px;
+  width: 80%;
+  border-radius: 20px;
+}
+.equipos img {
+  max-width: 50px;
+  margin-left: 5%;
+}
+.equipos h4 {
+  font-size: 26px;
+  margin: auto;
+}
+
+.std {
+  background-color: #020f2a;
+}
+.std .std-title {
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em 0;
+  height: 150px;
+}
+.std img {
+  width: 20rem;
+  padding-left: 3%;
+}
+.std h4 {
+  padding-right: 3%;
+  font-size: 2.5rem;
+  color: #baa256;
+}
+
+#index-estadios {
+  background: linear-gradient(160deg, #020f2a 50%, rgb(6, 34, 95));
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-bottom: 8em;
+}
+#index-estadios a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  width: 25em;
+  max-height: 350px;
+  margin: 20px 10px;
+  text-align: center;
+  margin: 30px 0;
+}
+#index-estadios img {
+  overflow: hidden;
+  width: 100%;
+  max-height: 350px;
+  border-radius: 25%;
+  transition: 0.25s;
+  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+}
+#index-estadios img:hover {
+  transform: scale(1.02);
+}
+
+.historia {
+  background-color: white;
+  height: 80vh;
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,200 @@
+@media (max-width:768px){
+    #exp{
+        .separator-2{
+            margin: 1em 0;
+        }
+    }
+    .banner-exp{
+        flex-flow: column wrap;
+        .exp-b-img-p {
+            
+            width: 100%;
+        }
+        .exp-b-img-cu {
+            
+            width: 100%;
+        }
+        .exp-b-img-co {
+            
+            width: 100%;
+        }
+        .pat-info{
+            width: 100%;
+            p{
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .exp-pat-top{
+        background-position: 10% 70%;
+        h1{
+            margin: 0;
+        }
+    }
+    .pat-banner-text{
+        padding: 30px 0;
+        height: 55vh;
+        h2{
+            font-size: 2.5rem;
+            width: 80%;
+        }
+    }
+    .pat-banner-img{
+        flex-direction: column;
+        div{
+            width: 100%;
+        }
+    }
+    .est-start {
+        justify-content: flex-end;
+        h1 {
+            font-size: 5rem
+        }
+
+        p {
+            font-size: 2rem;
+            width: 80%;
+        }
+    }
+    .est-match{
+        .est-match-title{
+            img{
+                width: 70%;
+            }
+        }
+        .est-match-info{
+            .partido{
+                flex-direction: column;
+                .match-div{
+                    width: 90%;
+                }
+                
+            }
+        }
+       
+    }
+    
+    
+
+}
+@media screen and (max-width:991px){
+    .naav{
+        background: $azul;
+        justify-content: center;
+        
+        .container{
+            a{
+                img{
+                    width: 200px;
+                }
+            }
+            .icon{
+                filter: invert(1);
+            }
+            .cont{
+                background-color: $azul;
+                margin: 0;
+                li{
+                    background-color: aqua;
+                    border: 0.5px solid white;
+                    margin: 1.5em;
+                    a{
+                        margin: 0;
+                        background-color: $azul;
+                        clip-path: none;
+                        font-size: 2em;
+                        width: 100%;
+                        transition: .5s all;
+                        &:hover{
+                            background-color: $oro-2;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .div-est{
+        .stadiums-main{
+            flex-flow: column-reverse nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            .stadiums-main-info{
+                width: 100%;
+                height: 50vh;
+                //background-color: darkcyan;
+                margin: 20px 0;
+                .part{
+                    height: 40%;
+                }
+                .btn-est{
+                    height: 70px;
+                }
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    .est-history {
+        flex-direction: column;
+        height: auto;
+        
+        .h-img{
+            width: 100%;
+        }
+        .h-info{
+            width: 100%;
+            padding: 5%;
+        }
+    }
+    .div-grupo{
+        .div-grupo-1{
+            flex-direction: column;
+            .div-grupo-main{
+                margin: 0;
+                width: 100%;
+            }
+            .info-team{
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width:576px) {
+   .naav{
+    .container{
+        a{
+            img{
+                width: 150px;
+            }
+        }
+    }
+   } 
+   
+    .footer{
+        padding: 2%;
+        flex-direction: column;
+        .footer-section{
+            width: 100%;
+            margin: 10px 0;
+        }
+        img{
+            width: 50%;
+        }
+        
+    }
+    .exp-com-top{
+        h1{
+            font-size: 4rem;
+        }
+    }
+    
+
+    
+}

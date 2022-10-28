@@ -1,0 +1,487 @@
+.space {
+    width: 100%;
+    background: url(../img/space.png);
+    background-color: #baa256;
+}
+
+.space-2 {
+    width: 100%;
+    height: 50px;
+    background: url(../img/separador-2.png);
+}
+
+
+
+
+.separator-diamond{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{
+        margin: 0 15px;
+        background: $oro-2;
+        height: 10px;
+        width: 10px;
+        rotate: 45deg;
+        &:nth-child(1){
+            width: 35%;
+            height: 2px;
+            rotate: 0deg;
+        }
+        &:nth-child(5){
+            width: 35%;
+            height: 2px;
+            rotate: 0deg;
+        }
+        &:nth-child(3){
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+
+.separator {
+    border: 1px solid rgba(200, 200, 200, 0.548);
+    height: 1px;
+    width: 80%;
+    background-color: rgba(200, 200, 200, 0.548);
+}
+.separator-gold {
+    border: 1px solid rgba(200, 200, 200, 0.548);
+    height: 1px;
+    width: 80%;
+    background-color: $oro-1;
+}
+
+.separator-2 {
+    border: 1px solid #e6e6e6;
+    height: 2px;
+    width: 100%;
+    background-color: #e6e6e6;
+}
+.separator-2-est{
+    height: 2px;
+    width: 100%;
+    background-color: #e6e6e6;
+    margin: 15px 0;
+}
+.separator-3 {
+    img {
+        background-color: #baa256;
+        height: 100px;
+        width: 100%;
+    }
+}
+
+.separator-large-gold {
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to right, #baa256, white)
+}
+
+.separator-large-blue {
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to right, $azul 50%, black)
+}
+
+
+
+//---------------------------------------------------------------->>>
+
+/*
+<div class="box">
+	<div class="lines">
+		<div class="circle"></div>
+	</div>
+</div>
+*/
+//---------------------------------------------------------------->>>
+
+
+ .box {
+     padding: 20px;
+     transition: 0.5s;
+     &:hover .diamond {
+        background-color: #baa256;
+        cursor: pointer;
+        transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+
+    }
+    &:hover .lines{
+        width: 50%;
+    }
+ }
+
+ .lines {
+     width: 100%;
+     position: relative;
+     padding: 10px;
+     transition: 1s;
+
+ }
+
+ .lines::after,
+ .lines::before {
+     content: "";
+     position: absolute;
+     margin: auto;
+     height: 2px;
+     background: #fff;
+     width: 45%;
+     top: 45%;
+ }
+
+ .lines::after {
+     left: 0;
+ }
+ .lines::before {
+     right: 0;
+ }
+
+ .circle {
+     height: 40px;
+     width: 40px;
+     border: 2px solid #fff;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     margin: auto;
+     border-radius: 50%;
+ }
+
+ .diamond {
+     height: 30px;
+     width: 30px;
+     border: 2px solid #fff;
+     background-color: #fff;
+     background-size: cover;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     margin: auto;
+     transform: rotate(45deg);
+     transition: 1s;
+
+    
+ }
+
+
+
+@mixin flexible($dis , $direc , $corte, $just , $aling ) {
+    display: $dis;
+    flex-flow: $direc, $corte;
+    justify-content: $just;
+    align-items: $aling;
+}
+
+
+.fifa-world-cup {
+    display: block;
+    background-color: transparent;
+
+    img {
+        width: 50px;
+    }
+}
+
+.position-absolute {
+    position: absolute;
+    top: 0;
+}
+
+
+
+.fondo-francia {
+    background-image: linear-gradient(90deg, rgba(255, 0, 0, 0.200) 33%, rgba(255, 255, 255, 0.200) 33%, rgba(255, 255, 255, 0.200) 66.66%, rgba(0, 0, 255, 0.200) 66.66%);
+    border-radius: 2%;
+}
+
+.fondo-alemania {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.200) 33%, rgba(255, 0, 0, 0.200) 33%, rgba(255, 0, 0, 0.200) 66.66%, rgba(255, 255, 0, 0.200) 66.66%);
+    border-radius: 2%;
+}
+
+.fondo-japon {
+    background-image: radial-gradient(circle, rgba(255, 0, 0, 0.200) 33%, rgba(255, 255, 255, 0.200) 33%, rgba(255, 255, 255, 0.200));
+    border-radius: 2%;
+}
+
+.fondo-paises-bajos {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.200) 33%, rgba(255, 255, 255, 0.200) 33%, rgba(255, 255, 255, 0.200) 66.66%, rgba(5, 50, 255, 0.200) 66.66%);
+    border-radius: 2%;
+}
+
+.fondo-españa {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.200) 27%, rgba(255, 255, 0, 0.200) 27%, rgba(255, 255, 0, 0.200) 73%, rgba(255, 0, 0, 0.200) 73%);
+    border-radius: 2%;
+}
+
+.fondo-costa-rica {
+    background-image: linear-gradient(rgba(5, 84, 255, 0.2) 17%,
+            rgba(255, 255, 255, 0.200) 17%,
+            rgba(255, 255, 255, 0.200) 33%,
+            rgba(255, 0, 0, 0.200) 33%,
+            rgba(255, 0, 0, 0.200) 66%,
+            rgba(255, 255, 255, 0.200) 66%,
+            rgba(255, 255, 255, 0.200) 83%,
+            rgba(5, 84, 255, 0.2) 83%);
+    border-radius: 2%;
+}
+
+.fondo-belgica {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.200) 33%, rgba(255, 255, 0, 0.200) 33%, rgba(255, 255, 0, 0.200) 66.66%, rgba(255, 0, 0, 0.200) 66.66%);
+    border-radius: 2%;
+}
+
+.fondo-canada {
+    background: url(../img/Sin\ título-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-croacia {
+    background: url(../img/Sin\ título-22.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+
+.fondo-ecuador {
+    background: url(../img/Sin\ título-20.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+
+.fondo-senegal {
+    background: url(../img/Sin\ título-5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-qatar {
+    background: url(../img/Sin\ título-21.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+
+.fondo-gales {
+    background: url(../img/Sin\ título-7.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-marruecos {
+    background: url(../img/Sin\ título-3.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+
+.fondo-iran {
+    background: url(../img/Sin\ título-23.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+
+.fondo-argentina {
+    background-image: linear-gradient(rgb(5, 120, 255, 0.2) 28%, rgba(255, 255, 255, 0.200) 28%, rgba(255, 255, 255, 0.200) 73%, rgb(5, 120, 255, 0.2) 73%);
+    border-radius: 2%;
+}
+
+.fondo-arabia {
+    background: url(../img/Sin\ título-9.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+
+.fondo-polonia {
+    background: linear-gradient(rgba(255, 255, 255, 0.200) 50%, rgba(255, 0, 0, 0.200) 50%);
+    border-radius: 2%;
+}
+
+.fondo-eeuu {
+    background: url(../img/Sin\ título-4.png);
+    background-size: cover;
+    background-position-y: 40%;
+    border-radius: 2%;
+}
+
+.fondo-mexico {
+    background: url(../img/Sin\ título-1.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-ing{
+    background: url(../img/Sin\ título-6.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-australia{
+    background: url(../img/Sin\ título-8.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-dinamarca{
+    background: url(../img/Sin\ título-10.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-tunez{
+    background: url(../img/Sin\ título-11.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-brasil{
+    background: url(../img/Sin\ título-12.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-serbia{
+    background: url(../img/Sin\ título-13.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+}
+.fondo-suiza{
+    background: url(../img/Sin\ título-14.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-camerun{
+    background: url(../img/Sin\ título-15.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-portugal{
+    background: url(../img/Sin\ título-16.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-ghana{
+    background: url(../img/Sin\ título-17.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-uruguay{
+    background: url(../img/Sin\ título-18.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+.fondo-corea{
+    background: url(../img/Sin\ título-19.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 2%;
+}
+
+
+
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.lines {
+    width: 50%;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+
+}
+
+.lines::after,
+.lines::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    height: 2px;
+    background: #fff;
+    width: 45%;
+    top: 45%;
+}
+
+.lines::after {
+    left: 0;
+}
+
+.lines::before {
+    right: 0;
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.diamond {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg);
+    transition: 1s;
+
+    &:hover {
+        cursor: pointer;
+        transform: rotate(225deg);
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+
+    }
+}
+
+.algo{
+    height: 20px;
+    width: 20px;
+    border: 2px solid #fff;
+    left: 0;
+    right: 0;
+}
+
+.d-f{
+    display: flex;
+}
+
+
+
