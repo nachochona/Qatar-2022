@@ -805,6 +805,7 @@ footer {
   background: url(../img/lusail-stadium.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: start;
 }
 
 .stadiums-top {
@@ -1223,6 +1224,7 @@ footer {
   justify-content: flex-start;
   height: 70px;
   width: 90%;
+  cursor: pointer;
 }
 .cont-grup .grup .equip p {
   font-size: 2.3rem;
@@ -1329,10 +1331,37 @@ footer {
   width: 90%;
 }
 
+.btn-letra-grupos {
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: space-evenly;
+  align-items: end;
+  background: #020f2a;
+  height: 70px;
+  width: 100%;
+}
+.btn-letra-grupos a {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  width: 10%;
+  margin: 5px;
+  background-color: rgb(3, 23, 65);
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #555;
+  border-radius: 5px;
+  transition: 0.5s all;
+}
+.btn-letra-grupos a:hover {
+  background: #baa256;
+  color: #e6e6e6;
+}
+
 .div-grupo {
   background: #e6e6e6;
   width: 100%;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 .div-grupo h1 {
   text-align: center;
@@ -1346,10 +1375,13 @@ footer {
   justify-content: none;
   align-items: none;
   width: 100%;
+  background-color: #020f2a;
+  padding: 2% 5%;
 }
 .div-grupo .div-grupo-1 .div-grupo-main {
   width: 65%;
   margin: 0 1%;
+  margin-top: 50px;
 }
 .div-grupo .div-grupo-1 .div-grupo-main h2 {
   text-align: center;
@@ -1359,6 +1391,15 @@ footer {
   padding: 1% 0;
   border-radius: 5px;
 }
+.div-grupo .div-grupo-1 .div-grupo-main .p-grup {
+  text-align: center;
+  font-size: 6rem;
+  color: #baa256;
+  padding: 1% 0;
+  border-radius: 5px;
+  background: #020c22;
+  font-weight: bold;
+}
 .div-grupo .div-grupo-1 .div-grupo-main .first {
   display: flex;
   flex-flow: row, nowrap;
@@ -1366,21 +1407,64 @@ footer {
   align-items: center;
   width: 100%;
   padding: 2%;
+  background-color: #020c22;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .div-grupo .div-grupo-1 .div-grupo-main .first img {
   width: 70%;
+  max-height: 70vh;
 }
 .div-grupo .div-grupo-1 .div-grupo-main .first p {
   width: 30%;
-  padding: auto;
+  padding: 5px;
   color: #505050;
   font-size: 1.5rem;
 }
+.div-grupo .div-grupo-1 .div-grupo-main .two {
+  background-color: #020c22;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
+  color: #baa256;
+  padding: 20px;
+  border-end-start-radius: 5px;
+  border-end-end-radius: 5px;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .two div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  text-align: center;
+}
+.div-grupo .div-grupo-1 .div-grupo-main .two div span {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+}
+.div-grupo .div-grupo-1 .div-grupo-main .two div span p {
+  margin-top: 10px;
+  color: white;
+  font-size: 3rem;
+  background: none;
+}
 .div-grupo .div-grupo-1 .div-grupo-main .historial-team {
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #020c22;
 }
 .div-grupo .div-grupo-1 .div-grupo-main .historial-team h3 {
   font-size: 3rem;
@@ -1401,14 +1485,16 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  color: #303030;
+  color: #999;
   transition: 0.5s all;
   border-radius: 2px;
+  text-align: center;
 }
 .div-grupo .div-grupo-1 .div-grupo-main .historial-team .historial-team-div div p {
   font-size: 2rem;
-  color: rgb(92, 0, 0);
+  color: #baa256;
   transition: 0.5s all;
+  text-align: center;
 }
 .div-grupo .div-grupo-1 .div-grupo-main .historial-team .historial-team-div div:hover {
   background-color: #000;
@@ -1426,21 +1512,20 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 35%;
-  background-color: #020f2a;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  margin-top: 5%;
 }
 .div-grupo .div-grupo-1 .info-team .fixture {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #000;
   padding: 0;
   margin: 0;
   background: #020f2a;
   border-bottom: 1px solid white;
-  color: white;
+  color: #baa256;
 }
 .div-grupo .div-grupo-1 .info-team .fixture h2 button {
   background: transparent;
@@ -1453,14 +1538,14 @@ footer {
 }
 .div-grupo .div-grupo-1 .info-team .fixture .fixture-title p {
   font-size: 2.5rem;
-  color: white;
+  color: #baa256;
   font-weight: bold;
 }
 .div-grupo .div-grupo-1 .info-team .fixture .fixture-title img {
   width: 50px;
 }
 .div-grupo .div-grupo-1 .info-team .fixture .fixture-info {
-  background-color: #333;
+  background-color: #505050;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1469,14 +1554,14 @@ footer {
   width: 100%;
 }
 .div-grupo .div-grupo-1 .info-team .fixture .fixture-info div {
-  width: 80%;
+  width: 90%;
   margin: 1% 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .div-grupo .div-grupo-1 .info-team .fixture .fixture-info div p {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: white;
   margin: 0;
 }
@@ -1487,7 +1572,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #333;
+  background-color: #505050;
   border-bottom: 1px solid white;
 }
 .div-grupo .div-grupo-1 .info-team .preset button {
@@ -1496,7 +1581,7 @@ footer {
 }
 .div-grupo .div-grupo-1 .info-team .preset p {
   font-size: 2.5rem;
-  color: white;
+  color: #baa256;
   font-weight: bold;
   text-align: center;
 }
@@ -1517,17 +1602,16 @@ footer {
 .div-grupo .div-grupo-1 .info-team .more-info {
   width: 100%;
   display: grid;
-  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 1fr 1fr 1fr;
   padding: 2%;
 }
 .div-grupo .div-grupo-1 .info-team .more-info div {
-  border-radius: 5px;
-  background-color: rgba(6, 40, 114, 0.3490196078);
-  margin: 5px;
+  background-color: rgba(117, 117, 117, 0.3490196078);
+  margin: 2px;
   text-align: center;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .div-grupo .accordion-team {
   width: 100%;
@@ -1535,6 +1619,36 @@ footer {
 .div-grupo .accordion-body {
   padding: 0;
   margin: 0;
+}
+
+#btn-up {
+  width: 60px;
+  height: 60px;
+  background: #020f2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border-radius: 100%;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  cursor: pointer;
+  border: 2px solid #baa256;
+}
+#btn-up img {
+  width: 40px;
+}
+#btn-up:hover {
+  background: #999;
+}
+
+.up-grup {
+  padding: 2vh;
+  height: 5px;
+  width: 100%;
+  background-color: #020f2a;
 }
 
 @media (max-width: 768px) {
@@ -1597,6 +1711,9 @@ footer {
   }
   .est-match .est-match-info .partido .match-div {
     width: 90%;
+  }
+  .stadiums-top h1 {
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1671,8 +1788,27 @@ footer {
     margin: 0;
     width: 100%;
   }
+  .div-grupo .div-grupo-1 .div-grupo-main .first {
+    flex-direction: column-reverse;
+  }
+  .div-grupo .div-grupo-1 .div-grupo-main .first img {
+    width: 100%;
+  }
+  .div-grupo .div-grupo-1 .div-grupo-main .first p {
+    width: 100%;
+    padding: 2%;
+  }
+  .div-grupo .div-grupo-1 .div-grupo-main .two {
+    flex-direction: column;
+  }
   .div-grupo .div-grupo-1 .info-team {
     width: 100%;
+  }
+  .div-grupo .div-grupo-1 .info-team .fixture .fixture-info {
+    height: 40vh;
+  }
+  .div-grupo .div-grupo-1 .info-team .fixture .fixture-info div {
+    width: 90%;
   }
 }
 @media (max-width: 576px) {

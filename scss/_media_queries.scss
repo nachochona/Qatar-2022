@@ -73,7 +73,11 @@
         }
        
     }
-    
+    .stadiums-top{
+        h1{
+            font-size: 3rem;
+        }
+    }
     
 
 }
@@ -156,9 +160,30 @@
             .div-grupo-main{
                 margin: 0;
                 width: 100%;
+                .first{
+                    flex-direction: column-reverse;
+                    img{
+                        width: 100%;
+                    }
+                    p{
+                        width: 100%;
+                        padding: 2%;
+                    }
+                }
+                .two{
+                    flex-direction: column;
+                }
             }
             .info-team{
                 width: 100%;
+                .fixture{
+                    .fixture-info{
+                        height: 40vh;
+                        div{
+                            width: 90%;
+                        }
+                    }
+                }
             }
         }
     }
