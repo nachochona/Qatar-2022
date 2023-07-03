@@ -4,6 +4,13 @@
             margin: 1em 0;
         }
     }
+    .des-doha{
+        flex-direction: column;
+        height: auto;
+        button{
+            margin: 3em 0;
+        }
+    }
     .banner-exp{
         flex-flow: column wrap;
         .exp-b-img-p {
@@ -78,6 +85,28 @@
             font-size: 3rem;
         }
     }
+    .btn-letra-grupos{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin: 3% 0;
+        a{
+            width: 70%;
+            margin: 1% 0;
+        }
+    }
+    .separator-diamond{
+        div{
+            margin: 0 .5em;
+        }
+    }
+    .calendario{
+        background-color: #000;
+        .calendario_box{
+            background: #000;
+            width: 100%;
+        }
+    }
     
 
 }
@@ -125,11 +154,11 @@
             align-items: center;
             width: 100%;
             height: auto;
+            background: $azul;
             .stadiums-main-info{
+                background: $azul-oscuro;
                 width: 100%;
-                height: 50vh;
-                //background-color: darkcyan;
-                margin: 20px 0;
+                padding: 50px 0;
                 .part{
                     height: 40%;
                 }
@@ -173,6 +202,13 @@
                 .two{
                     flex-direction: column;
                 }
+                .historial-team{
+                    .historial-team-div{
+                        div{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
             }
             .info-team{
                 width: 100%;
@@ -187,6 +223,13 @@
             }
         }
     }
+    .std{ 
+        .std-title{
+          flex-direction: column;  
+        }
+          
+    }
+    
     
 }
 

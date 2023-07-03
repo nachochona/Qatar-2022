@@ -74,7 +74,7 @@
 
 .div-est {
     width: 100%;
-    background: white;
+    background-color: #baa256;
 }
 
 .stadiums-main {
@@ -82,8 +82,8 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     height: 70vh;
-    background-color: white;
-
+    padding: 3%;
+    background-color: #fff;
     .stadiums-main-info {
         background-color: white;
         display: flex;

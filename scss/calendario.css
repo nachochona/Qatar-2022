@@ -1,0 +1,11 @@
+.calendario {
+  background-color: aqua;
+  width: 100%;
+  height: 70vh;
+}
+.calendario .calendario_box {
+  width: 50%;
+  height: 90%;
+  background: #555;
+  margin: 0;
+}/*# sourceMappingURL=calendario.css.map */

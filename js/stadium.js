@@ -88,9 +88,9 @@ function mostrarStadiums(items) {
                         <div class="stadiums-main-info">                          
                             <h4>${element.fecha}</h4>
                             <h3>${element.nombre}</h3>
-                            <div class="separator"></div>
+                            <div class="separator" style="width:70%;"></div>
                             <p>${element.descripcion}</p>
-                            <div class="separator"></div>
+                            <div class="separator" style="width:70%;"></div>
                             <span class="part-tittle">Partidos</span>
                             <p class="part">${element.partidos}</p>
                             <button class="btn-est"><span><a href="${element.link}">Ver más</a></span></button>

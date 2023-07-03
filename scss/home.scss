@@ -7,6 +7,11 @@
 @import "estadios";
 @import "grupos";
 @import "media_queries";
+@import "calendario";
+
+
+
+
 
 
 .navbar{
@@ -131,23 +136,41 @@
         margin: 5% 0;   
     }
 }
-
-
 .equipos{
+    background: $oro-1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
     display: flex;
-    background-color: $oro-1;
-    margin: 0 20px 30px 20px;
     width: 80%;
+    padding: .5em;
+    margin: 2%;
     border-radius: 20px;
     img{
         max-width: 50px;
-        margin-left: 5%;
     }
-    h4{
-        font-size: 26px;
+    a{
+        font-size: 2em;
         margin: auto;
+        text-decoration: none;
+        color: $gris-dark;
+        font-weight: 400;
     }
 }
+
+// .equipos{
+//     display: flex;
+//     background-color: $oro-1;
+//     margin: 0 20px 30px 20px;
+//     width: 80%;
+//     border-radius: 20px;
+//     img{
+//         max-width: 50px;
+//         margin-left: 5%;
+//     }
+//     h4{
+//         font-size: 26px;
+//         margin: auto;
+//     }
+// }
 
 
 .std{
