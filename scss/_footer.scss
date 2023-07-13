@@ -3,7 +3,7 @@ footer{
 }
 .fifa-socios{
     @include flexible(flex, row, wrap, space-evenly, center);
-    padding: 20px 0;
+    padding: 1em 0;
     background-color: $oro-2;
     img{
         max-width: 10%;
@@ -11,10 +11,10 @@ footer{
 }
 
 .footer{
+    padding: 10em 0;
     img{
         width: 30%;
     }
-    padding: 5% 0;
     background: $azul;
     @include flexible(flex, row, nowrap, space-evenly, center);
     .footer-section{

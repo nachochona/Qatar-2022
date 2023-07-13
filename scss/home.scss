@@ -1,257 +1,57 @@
 @import "reset";
 @import "colores";
-@import "var" ;
+@import "var";
 @import "header_nav";
+@import "main_index";
 @import "footer";
 @import "experience";
 @import "estadios";
 @import "grupos";
-@import "media_queries";
 @import "calendario";
+@import "media_queries";
 
 
 
 
 
 
-.navbar{
-    //height: 100px;
-    align-items: center;
-    color: #e6e6e6;
-}
-.btn-nav{
+
+
+
+
+
+
+
+
+
+.btn-nav {
     height: 50px;
     color: #e6e6e6;
     width: 150px;
     background: $oro-2;
     clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
 }
-.dropdown-item:hover{
+
+.dropdown-item:hover {
     color: #e6e6e6;
     background-color: $oro-2;
 }
 
 
 
-.group-text{
-    background-color: $oro-2;
-    padding: 1.25em;
-    h3{
-    text-align: center;
-    font-size: 3rem;
-    color: rgb(30,30,30);
-    }
-    p{
-        text-align: center;
-        font-size: 1.5rem;
-        color: rgb(30,30,30);
-        margin: 0;
-        padding: 0;
-    }
-}
-
-.index-estadio{
-    background-image: url(../img/estadio-final.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    div{
-        clip-path: polygon(5% 50%, 0 58%, 0 100%, 20% 100%, 30% 95%, 40% 100%, 60% 100%, 70% 95%, 80% 100%, 100% 100%, 100% 58%, 95% 50%, 100% 42%, 100% 0, 80% 0, 70% 5%, 60% 0, 40% 0, 30% 5%, 20% 0, 0 0, 0 42%);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        background: #776630d7;
-        border: 2px solid $oro-2;
-        padding: 1%;
-        margin-bottom: 30px;
-        border-radius: 5%;
-    }
-    h2{
-        width: 300px;
-        font-size: 2em;
-        color: white;
-        text-align: center;
-    }
-    a{
-        list-style: none;
-        text-decoration: none;
-        color: white;
-        transition: all 0.5s;
-        &:hover{
-            color: $base;
-        }
-    }
-    button{
-        width: 50%;
-        font-size: 2rem;
-        border: 1px solid white;
-        border-color: white;
-        color: white;
-        background-color: transparent;
-        border-radius: 5%;
-        transition: 1s all;
-        &:hover{
-            background-color: $base;
-        }
-    }
-    
-}
 
 
 
 
-.fixture{
-     //background: linear-gradient(rgb(210,10,70,.85),#8a1538d9);  
-     //background: rgb(186,162,86);
-    // background: linear-gradient(180deg, rgba(186,162,86,1) 33%, rgba(2,15,42,1) 66%);
-    //background: url(../img/fondo-uno.jpg) no-repeat;
-    //background: linear-gradient(160deg, #111 50%,rgb(50, 50, 50));
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: space-evenly;
-    padding: 1% 1%;
-    
-
-} 
-.grupos{
-    background-color: #e6e6e6;
-    width: 30rem;
-    margin: 15px;
-    border-radius: 25%;
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-    clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
-    p{
-        font-size: 3em;
-        margin: 5% 0;   
-    }
-}
-.equipos{
-    background: $oro-1;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-    display: flex;
-    width: 80%;
-    padding: .5em;
-    margin: 2%;
-    border-radius: 20px;
-    img{
-        max-width: 50px;
-    }
-    a{
-        font-size: 2em;
-        margin: auto;
-        text-decoration: none;
-        color: $gris-dark;
-        font-weight: 400;
-    }
-}
-
-// .equipos{
-//     display: flex;
-//     background-color: $oro-1;
-//     margin: 0 20px 30px 20px;
-//     width: 80%;
-//     border-radius: 20px;
-//     img{
-//         max-width: 50px;
-//         margin-left: 5%;
-//     }
-//     h4{
-//         font-size: 26px;
-//         margin: auto;
-//     }
-// }
 
 
-.std{
-    background-color: $azul; 
-    .std-title{
-        @include flexible(flex, row, nowrap, center, center);
-        text-align: center;
-        padding: 1em 0 ;
-        //border: #e6e6e6 1px solid;
-        height: 150px;
-    }
-    img{
-        width: 20rem;
-        //padding-right: 5%;
-        padding-left: 3%;
-    }
-    h4 {
-        padding-right: 3%;
-        font-size: 2.5rem;
-        color: $oro-2;
-    }    
-}
 
-#index-estadios{
-    background: linear-gradient(160deg, $azul 50%,rgb(6, 34, 95));
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    object-fit: cover;
-    padding-bottom: 8em;
-    a{
-        color: white;
-        text-decoration: none;
-        font-size: 2rem;
-        width: 25em;
-        max-height: 350px;
-        margin:  20px 10px;
-        text-align: center;
-        margin: 30px 0;
-    }
-    img{
-        overflow: hidden;
-        width: 100%;
-        max-height: 350px;
-        border-radius: 25%;
-        transition: 0.25s;
-        //clip-path: polygon(100% 10%, 90% 0, 10% 0, 0 10%, 0 90%, 10% 100%, 90% 100%, 100% 90%);
-        //clip-path: polygon(50% 0%, 95% 15%, 100% 60%, 95% 100%, 5% 100%, 0% 60%, 5% 15%);
-        clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
-    }
-    img:hover{
-        transform: scale(1.02);
-    }
-}
-.historia{
+
+.historia {
     background-color: white;
 
     height: 80vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

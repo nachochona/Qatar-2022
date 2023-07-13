@@ -67,7 +67,7 @@ body {
   border: 1px solid rgba(200, 200, 200, 0.548);
   height: 1px;
   width: 80%;
-  background-color: rgba(255, 217, 0, 0.404);
+  background-color: rgba(255, 217, 0, 0.4039215686);
 }
 
 .separator-2 {
@@ -476,10 +476,6 @@ body {
   margin-top: 110px;
 }
 
-.scroll {
-  background-color: #121212;
-}
-
 .naav {
   transition: 0.5s all;
 }
@@ -501,6 +497,273 @@ body {
   font-weight: 500;
 }
 
+#header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  z-index: 10;
+  transition: 0.1s all ease-in-out;
+}
+#header .nav-img-responsive a img {
+  width: 200px;
+  transition: all 0.2s ease-in-out;
+}
+#header .nav-img-responsive .btn-nav-menu {
+  display: none;
+  font-size: 4em;
+  color: #baa256;
+}
+#header .nav-menu .nav-menu-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 0.5em;
+  font-size: 1.2em;
+}
+#header .nav-menu .nav-menu-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+  text-decoration: none;
+  color: white;
+  background-color: #baa256;
+  width: 110px;
+  height: 35px;
+}
+
+.scroll {
+  background-color: rgba(0, 0, 0, 0.7529411765);
+  border-bottom: 4px solid #baa256;
+  padding: 0.6em 2em !important;
+}
+.scroll .nav-img-responsive a img {
+  width: 150px !important;
+}
+
+#main-index .index-estadio {
+  background-image: url(../img/estadio-final.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+#main-index .index-estadio div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  background-color: rgba(48, 48, 48, 0.8);
+  width: 500px;
+  padding: 2em 5em;
+  margin-bottom: 2em;
+  box-shadow: 0 0 50px 0 #303030;
+}
+#main-index .index-estadio div h2 {
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+#main-index .index-estadio div h2 a {
+  list-style: none;
+  text-decoration: none;
+  color: #baa256;
+  transition: all 0.5s;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+#main-index .index-estadio div button {
+  width: 50%;
+  font-size: 2rem;
+  border: 1px solid white;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  border-radius: 5%;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+#main-index .index-estadio div button:hover {
+  background-color: #baa256;
+}
+#main-index .group-text {
+  background-color: #baa256;
+  padding: 2em 0;
+}
+#main-index .group-text h3 {
+  text-align: center;
+  font-size: 4rem;
+  color: rgb(30, 30, 30);
+}
+#main-index .group-text p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(30, 30, 30);
+  margin: 0;
+  padding: 0 1em;
+}
+#main-index .fixture {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 5em;
+}
+#main-index .fixture .grupos {
+  background-color: #020f2a;
+  margin: 2em 1em;
+  padding: 2em;
+  width: 30rem;
+  border-radius: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+}
+#main-index .fixture .grupos p {
+  font-size: 3em;
+  margin: 5% 0;
+  color: #baa256;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#main-index .fixture .grupos .equipos {
+  background-color: #baa256;
+  display: flex;
+  width: 80%;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#main-index .fixture .grupos .equipos img {
+  max-width: 50px;
+}
+#main-index .fixture .grupos .equipos a {
+  font-size: 2em;
+  margin: auto;
+  text-decoration: none;
+  color: #121212;
+  font-weight: 400;
+}
+#main-index .fixture .grupos .equipos:hover {
+  background: rgba(0, 0, 0, 0.3137254902);
+}
+#main-index .fixture .grupos .equipos:hover a {
+  color: #baa256;
+}
+#main-index .std {
+  background-color: #020f2a;
+}
+#main-index .std .std-title {
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5em 0;
+}
+#main-index .std .std-title img {
+  width: 20rem;
+  padding-left: 1rem;
+}
+#main-index .std .std-title h4 {
+  padding-right: 1rem;
+  font-size: 2.5rem;
+  color: #baa256;
+}
+#main-index .std #index-estadios {
+  background: linear-gradient(160deg, #020f2a 50%, rgb(6, 34, 95));
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 8em;
+  justify-content: center;
+}
+#main-index .std #index-estadios a {
+  border-left: 15px solid #baa256;
+  transition: 0.2s all ease-in-out;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  width: 25em;
+  height: 15em;
+  text-align: center;
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 1em;
+}
+#main-index .std #index-estadios a p {
+  transition: 0.2s all ease-in-out;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 0 0.5em;
+  color: #baa256;
+  margin-bottom: 0.5em;
+  background: rgba(2, 15, 42, 0.8666666667);
+}
+#main-index .std #index-estadios a:nth-child(1) {
+  background: url(../img/al-bayt.jpg);
+  background-position: 70% 0%;
+  background-size: cover;
+}
+#main-index .std #index-estadios a:nth-child(2) {
+  background: url(../img/khalifa_stadium-a.jpg);
+  background-position: 70% 0%;
+  background-size: cover;
+}
+#main-index .std #index-estadios a:nth-child(3) {
+  background: url(../img/Stadium-974-a.jpg);
+  background-position: 50% 100%;
+  background-size: cover;
+}
+#main-index .std #index-estadios a:nth-child(4) {
+  background: url(../img/Al-thumama.jpg);
+  background-position: 70% 0%;
+  background-size: cover;
+}
+#main-index .std #index-estadios a:nth-child(5) {
+  background: url(../img/al-janoub.jpg);
+  background-position: 70% 0%;
+  background-size: cover;
+}
+#main-index .std #index-estadios a:nth-child(6) {
+  background: url(../img/estadio-final.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+#main-index .std #index-estadios a:nth-child(7) {
+  background: url(../img/education-city.webp);
+  background-position: 80% 100%;
+  background-size: cover;
+}
+#main-index .std #index-estadios a:nth-child(8) {
+  background: url(../img/ahmad-bin-ali.jpg);
+  background-position: 70% 0%;
+  background-size: cover;
+}
+#main-index .std #index-estadios a:hover {
+  border-left: 15px solid white;
+}
+#main-index .std #index-estadios a:hover p {
+  color: #020f2a;
+  background: rgba(186, 162, 86, 0.8666666667);
+}
+
 footer {
   background-color: #020f2a;
 }
@@ -510,7 +773,7 @@ footer {
   flex-flow: row, wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 0;
+  padding: 1em 0;
   background-color: #baa256;
 }
 .fifa-socios img {
@@ -518,7 +781,7 @@ footer {
 }
 
 .footer {
-  padding: 5% 0;
+  padding: 10em 0;
   background: #020f2a;
   display: flex;
   flex-flow: row, nowrap;
@@ -586,6 +849,7 @@ footer {
   border-radius: 0;
   box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   transition: background 0.8s ease;
+  width: 180px;
 }
 .button:hover {
   background: rgba(100, 0, 0, 0.03);
@@ -638,8 +902,8 @@ footer {
 }
 
 .des-doha {
+  padding: 5em 0;
   width: 100%;
-  height: 10em;
   background-color: #8a1539;
   display: flex;
   flex-flow: row, wrap;
@@ -707,21 +971,11 @@ footer {
           clip-path: polygon(0 42%, 0 0, 100% 0, 100% 100%, 0 100%, 0 58%, 5% 50%);
 }
 
-.exp-pat-top {
-  background: url(https://s1.significados.com/foto/desierto.-camello.jpg);
-  background-position: 40% 58%;
-  height: 80vh;
-  display: flex;
-  flex-flow: column, nowrap;
-  justify-content: center;
-  align-items: center;
-}
-.exp-pat-top h1 {
-  margin: 0 0 0 40%;
-  font-size: 6rem;
-  font-weight: 900;
-  color: white;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+.separator-exp {
+  background: rgba(0, 0, 0, 0.062745098);
+  height: 0px;
+  width: 100%;
+  margin: 0.1em 0;
 }
 
 .pat-banner-text {
@@ -758,6 +1012,23 @@ footer {
 .pat-banner-img div img {
   width: 100%;
   height: 100%;
+}
+
+.exp-pat-top {
+  background: url(https://s1.significados.com/foto/desierto.-camello.jpg);
+  background-position: 40% 58%;
+  height: 80vh;
+  display: flex;
+  flex-flow: column, nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.exp-pat-top h1 {
+  margin: 0 0 0 40%;
+  font-size: 6rem;
+  font-weight: 900;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
 .exp-cul-top {
@@ -1697,13 +1968,84 @@ footer {
   font-size: 1.4rem;
 }
 
+.calendario {
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 170vh;
+}
+.calendario .calendario_box {
+  width: 60%;
+  height: 80%;
+}
+.calendario .calendario_box .calendario_match {
+  background-color: #909090;
+  color: white;
+}
+.calendario .calendario_box .calendario_match h3 {
+  background: url(../img/fondo-uno.jpg);
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+.calendario .calendario_box .calendario_match .match_box {
+  background: #909090;
+  margin: 2% 5%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+.calendario .calendario_box .calendario_match .match_box p {
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.calendario .calendario_box .calendario_match .match_box p:nth-child(1) {
+  background-color: #333;
+  font-size: 1.6rem;
+}
+.calendario .calendario_box .calendario_match .match_box div {
+  background: #000;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 8fr 1fr 1fr 8fr;
+}
+.calendario .calendario_box .calendario_match .match_box div div {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calendario .calendario_box .calendario_match .match_box div div:nth-child(1) {
+  background-color: #8a1539;
+}
+.calendario .calendario_box .calendario_match .match_box div div:nth-child(2) {
+  justify-content: space-evenly;
+  background-color: #505050;
+}
+.calendario .calendario_box .calendario_match .match_box div div:nth-child(5) {
+  justify-content: space-evenly;
+  background-color: #505050;
+}
+.calendario .calendario_box .calendario_match .match_box div div img {
+  max-width: 50px;
+}
+
 @media (max-width: 768px) {
+  .index-estadio div {
+    width: 90% !important;
+    background-color: #000;
+    padding: 2em 1em !important;
+  }
   #exp .separator-2 {
     margin: 1em 0;
   }
   .des-doha {
     flex-direction: column;
     height: auto;
+    padding: 0;
   }
   .des-doha button {
     margin: 3em 0;
@@ -1822,6 +2164,56 @@ footer {
     background-color: #baa256;
     color: black;
   }
+  #header {
+    background-color: rgba(0, 0, 0, 0.7529411765);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.2em 1em !important;
+  }
+  #header .nav-img-responsive {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header .nav-img-responsive a img {
+    width: 150px;
+  }
+  #header .nav-img-responsive .btn-nav-menu {
+    display: flex;
+    cursor: pointer;
+  }
+  #header .nav-menu {
+    display: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  #header .nav-menu .nav-menu-list {
+    flex-direction: column;
+    padding: 1em 0;
+    width: 100%;
+    gap: 1em;
+  }
+  #header .nav-menu .nav-menu-list li {
+    background: #000;
+    width: 90%;
+    padding: 0.5em 0;
+    border: 2px solid #baa256;
+  }
+  #header .nav-menu .nav-menu-list li a {
+    width: 100%;
+    height: auto;
+    -webkit-clip-path: none !important;
+            clip-path: none !important;
+    background: none;
+  }
+  .visible {
+    display: flex !important;
+    visibility: visible;
+  }
   .div-est .stadiums-main {
     flex-flow: column-reverse nowrap;
     justify-content: center;
@@ -1889,11 +2281,62 @@ footer {
   }
   .std .std-title {
     flex-direction: column;
+    gap: 1em;
+  }
+  .std .std-title img {
+    padding: 0 !important;
+  }
+  .std .std-title h4 {
+    padding: 0 !important;
+  }
+  .std #index-estadios a {
+    width: 20em !important;
+    height: 12em !important;
   }
 }
 @media (max-width: 576px) {
   .naav .container a img {
     width: 150px;
+  }
+  #main-index .group-text h3 {
+    font-size: 3em;
+  }
+  #main-index .group-text p {
+    font-size: 1.2em;
+  }
+  #main-index .fixture {
+    padding: 5em 1em;
+  }
+  #main-index .fixture .grupos {
+    width: 100%;
+    margin: 2em 0;
+  }
+  #main-index .fixture .grupos p {
+    font-size: 2em;
+  }
+  #main-index .fixture .grupos .equipos {
+    width: 90%;
+  }
+  #main-index .fixture .grupos .equipos img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  #main-index .fixture .grupos .equipos a {
+    font-size: 1.5em;
+  }
+  #main-index .std #index-estadios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #main-index .std #index-estadios a {
+    width: 90% !important;
+    height: 15em !important;
+    margin: 2em 0;
+    background-position: center !important;
+  }
+  #main-index .std #index-estadios a p {
+    font-size: 1.3em !important;
   }
   .footer {
     padding: 2%;
@@ -1910,76 +2353,6 @@ footer {
     font-size: 4rem;
   }
 }
-.calendario {
-  display: flex;
-  flex-flow: row, nowrap;
-  justify-content: center;
-  align-items: center;
-  height: 170vh;
-}
-.calendario .calendario_box {
-  width: 60%;
-  height: 80%;
-}
-.calendario .calendario_box .calendario_match {
-  background-color: #909090;
-  color: white;
-}
-.calendario .calendario_box .calendario_match h3 {
-  background: url(../img/fondo-uno.jpg);
-  text-align: center;
-  margin: 0;
-  padding: 10px;
-}
-.calendario .calendario_box .calendario_match .match_box {
-  background: #909090;
-  margin: 2% 5%;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
-}
-.calendario .calendario_box .calendario_match .match_box p {
-  background-color: #444;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 1.2rem;
-}
-.calendario .calendario_box .calendario_match .match_box p:nth-child(1) {
-  background-color: #333;
-  font-size: 1.6rem;
-}
-.calendario .calendario_box .calendario_match .match_box div {
-  background: #000;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 4fr 8fr 1fr 1fr 8fr;
-}
-.calendario .calendario_box .calendario_match .match_box div div {
-  font-size: 1.5rem;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.calendario .calendario_box .calendario_match .match_box div div:nth-child(1) {
-  background-color: #8a1539;
-}
-.calendario .calendario_box .calendario_match .match_box div div:nth-child(2) {
-  justify-content: space-evenly;
-  background-color: #505050;
-}
-.calendario .calendario_box .calendario_match .match_box div div:nth-child(5) {
-  justify-content: space-evenly;
-  background-color: #505050;
-}
-.calendario .calendario_box .calendario_match .match_box div div img {
-  max-width: 50px;
-}
-
-.navbar {
-  align-items: center;
-  color: #e6e6e6;
-}
-
 .btn-nav {
   height: 50px;
   color: #e6e6e6;
@@ -1992,176 +2365,6 @@ footer {
 .dropdown-item:hover {
   color: #e6e6e6;
   background-color: #baa256;
-}
-
-.group-text {
-  background-color: #baa256;
-  padding: 1.25em;
-}
-.group-text h3 {
-  text-align: center;
-  font-size: 3rem;
-  color: rgb(30, 30, 30);
-}
-.group-text p {
-  text-align: center;
-  font-size: 1.5rem;
-  color: rgb(30, 30, 30);
-  margin: 0;
-  padding: 0;
-}
-
-.index-estadio {
-  background-image: url(../img/estadio-final.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-}
-.index-estadio div {
-  -webkit-clip-path: polygon(5% 50%, 0 58%, 0 100%, 20% 100%, 30% 95%, 40% 100%, 60% 100%, 70% 95%, 80% 100%, 100% 100%, 100% 58%, 95% 50%, 100% 42%, 100% 0, 80% 0, 70% 5%, 60% 0, 40% 0, 30% 5%, 20% 0, 0 0, 0 42%);
-          clip-path: polygon(5% 50%, 0 58%, 0 100%, 20% 100%, 30% 95%, 40% 100%, 60% 100%, 70% 95%, 80% 100%, 100% 100%, 100% 58%, 95% 50%, 100% 42%, 100% 0, 80% 0, 70% 5%, 60% 0, 40% 0, 30% 5%, 20% 0, 0 0, 0 42%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background: rgba(119, 102, 48, 0.8431372549);
-  border: 2px solid #baa256;
-  padding: 1%;
-  margin-bottom: 30px;
-  border-radius: 5%;
-}
-.index-estadio h2 {
-  width: 300px;
-  font-size: 2em;
-  color: white;
-  text-align: center;
-}
-.index-estadio a {
-  list-style: none;
-  text-decoration: none;
-  color: white;
-  transition: all 0.5s;
-}
-.index-estadio a:hover {
-  color: #8a1539;
-}
-.index-estadio button {
-  width: 50%;
-  font-size: 2rem;
-  border: 1px solid white;
-  border-color: white;
-  color: white;
-  background-color: transparent;
-  border-radius: 5%;
-  transition: 1s all;
-}
-.index-estadio button:hover {
-  background-color: #8a1539;
-}
-
-.fixture {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  padding: 1% 1%;
-}
-
-.grupos {
-  background-color: #e6e6e6;
-  width: 30rem;
-  margin: 15px;
-  border-radius: 25%;
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-  align-items: center;
-  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
-          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
-}
-.grupos p {
-  font-size: 3em;
-  margin: 5% 0;
-}
-
-.equipos {
-  background: rgba(255, 217, 0, 0.404);
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
-  display: flex;
-  width: 80%;
-  padding: 0.5em;
-  margin: 2%;
-  border-radius: 20px;
-}
-.equipos img {
-  max-width: 50px;
-}
-.equipos a {
-  font-size: 2em;
-  margin: auto;
-  text-decoration: none;
-  color: #121212;
-  font-weight: 400;
-}
-
-.std {
-  background-color: #020f2a;
-}
-.std .std-title {
-  display: flex;
-  flex-flow: row, nowrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1em 0;
-  height: 150px;
-}
-.std img {
-  width: 20rem;
-  padding-left: 3%;
-}
-.std h4 {
-  padding-right: 3%;
-  font-size: 2.5rem;
-  color: #baa256;
-}
-
-#index-estadios {
-  background: linear-gradient(160deg, #020f2a 50%, rgb(6, 34, 95));
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding-bottom: 8em;
-}
-#index-estadios a {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  width: 25em;
-  max-height: 350px;
-  margin: 20px 10px;
-  text-align: center;
-  margin: 30px 0;
-}
-#index-estadios img {
-  overflow: hidden;
-  width: 100%;
-  max-height: 350px;
-  border-radius: 25%;
-  transition: 0.25s;
-  -webkit-clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
-          clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
-}
-#index-estadios img:hover {
-  transform: scale(1.02);
 }
 
 .historia {

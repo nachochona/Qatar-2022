@@ -2,24 +2,24 @@
     margin-top: 110px;
 }
 
-.scroll {
-    background-color: $gris-dark;
-}
+
 
 
 .naav {
     transition: .5s all;
+
     .container {
-        a{
-            img{
+        a {
+            img {
                 width: 250px;
             }
         }
-        .cont{
-            width: 100%;  
 
-            li{
-                a{
+        .cont {
+            width: 100%;
+
+            li {
+                a {
                     text-align: center;
                     background-color: #baa256;
                     width: 100px;
@@ -35,3 +35,174 @@
     }
 
 }
+
+
+
+
+
+#header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    z-index: 10;
+    transition: .1s all ease-in-out;
+
+    .nav-img-responsive {
+        a {
+            img {
+                width: 200px;
+                transition: all .2s ease-in-out;
+            }
+        }
+        .btn-nav-menu{
+            display: none;
+            font-size: 4em;
+            color: #baa256;
+        }
+    }
+
+    .nav-menu {
+        .nav-menu-list {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            gap: .5em;
+            font-size: 1.2em;
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
+                text-decoration: none;
+                color: white;
+                background-color: #baa256;
+                width: 110px;
+                height: 35px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.scroll {
+    background-color: #000000c0;
+    border-bottom: 4px solid $oro-2;
+    padding: .6em 2em !important;
+    .nav-img-responsive{
+        a {
+            img {
+                width: 150px !important;
+            }
+        }
+        
+    }
+}
+
+
+
+
+// header {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 1em;
+
+//     .right-nav {
+//         #abrirMenu {
+//             border: none;
+//             background-color: transparent;
+//             cursor: pointer;
+//             svg {
+//                 fill: $oro-2;
+//                 width: 50px;
+//                 height: 50px;
+//             }
+//         }
+
+//         .navBar {
+//             height: 100vh;
+//             width: 50%;
+//             background: #000000c0;
+//             backdrop-filter: blur(10px);
+//             opacity: 0;
+//             z-index: 10000000;
+//             // opacity: 0;
+//             // visibility: hidden;
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: start;
+//             align-items: end;
+//             visibility: hidden;
+//             transition: .5s all ease-in-out;
+//             #cerrarMenu {
+//                 border: none;
+//                 background-color: transparent;
+//                 cursor: pointer;
+//                 padding: 2em;
+//                 svg {
+//                     fill: $oro-2;
+//                     width: 40px;
+//                     height: 40px;
+//                 }
+//             }
+
+
+//             ul{
+//                 padding: 2em;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: end;
+//                 width: 100%;
+//                 li{
+//                     display: flex;
+//                     width: 90%;
+//                     padding: 1em 0;
+//                     transition: 1s all ease-in-out;
+//                     a{
+//                         display: flex;
+//                         justify-content: end;
+//                         width: 100%;
+//                         font-size: 3em;
+//                         text-decoration: none;
+//                         list-style: none;
+//                         color: $oro-2;
+//                         text-transform: uppercase;
+//                     }
+//                 }
+
+//             }
+//             li:hover{
+//                 background: #ffffff50;
+//             }
+//         }
+//     }
+// }
+
+// .visible {
+//     opacity: 1 !important;
+//     visibility: visible !important;
+//     transition: all .4s ease-in-out;
+// }
+
+// .quitar {
+//     opacity: 0;
+//     visibility: hidden;
+//     position: relative;
+// }

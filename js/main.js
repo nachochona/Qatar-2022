@@ -2,7 +2,7 @@
 //-----------------------------SCROLL----------------------------------->>>
 
 
-const nav = document.getElementById("nav")
+const nav = document.getElementById("header")
 
 window.onscroll = function (){
     if(window.pageYOffset >= 10){
