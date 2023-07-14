@@ -17,14 +17,14 @@ let Cultura = [
 },
 {
     nombre: "Código de vestimenta en las Mujeres",
-    descripcion: "-Las mujeres originarias de Qatar cubren su cabello con una tela conocida como shayla o nijab, mientras portan un vestido largo negro llamado abaya. Algunas también acostumbran cubrir su rostro con un nicab, que solo deja al descubierto sus ojos.",
+    descripcion: "Las mujeres originarias de Qatar cubren su cabello con una tela conocida como shayla o nijab, mientras portan un vestido largo negro llamado abaya. Algunas también acostumbran cubrir su rostro con un nicab, que solo deja al descubierto sus ojos.",
     img_a: "https://images.ecestaticos.com/Lhtsn_JDDMsECXW6MHwfpXaE7o0=/126x0:2166x1530/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F5b9%2F478%2F48a%2F5b947848a33958b28ac14ff3f3066ee4.jpg",
     img_b: "https://www.researchgate.net/publication/349580888/figure/fig1/AS:994982404059137@1614233699546/Widely-practiced-forms-of-the-Muslim-veil-the-hijab-shayla-khimar-abaya-niqab.png",
     img_c: "https://www.losandes.com.ar/resizer/LR3ae9TqVMLAHGjx-ouhqvzUrbc=/1200x793/smart/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/4XSD6ROEAVEVTPL3DI477OILKE.jpg",
 },
 {
     nombre: "Código de vestimenta en los Hombres",
-    descripcion: "-Los hombres visten con el thawb, thobe o thaub, una prenda blanca suelta hasta los tobillos y de manga larga sin transparencias, parecida a una túnica, arriba de sus pantalones. También usan una tela en la cabeza llamada gutra, que puede ser de tela blanca o roja y blanca, sujeto con una cuerda negra llamada agal.",
+    descripcion: "Los hombres visten con el thawb, thobe o thaub, una prenda blanca suelta hasta los tobillos y de manga larga sin transparencias, parecida a una túnica, arriba de sus pantalones. También usan una tela en la cabeza llamada gutra, que puede ser de tela blanca o roja y blanca, sujeto con una cuerda negra llamada agal.",
     img_a: "https://www.cronista.com/files/image/446/446293/61faf99332f3e.jpg",
     img_b: "https://img.freepik.com/vector-premium/conjunto-hombre-arabe-ropa-tradicional-ilustracion-estilo-dibujos-animados-plana_246613-102.jpg",
     img_c: "https://cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/XAS3C75PZVFR3KUWKBIV5NDKHY.jpg",

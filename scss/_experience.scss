@@ -95,7 +95,8 @@
 	padding: 5em 0;
 	width: 100%;
 	background-color: $base;
-	@include flexible(flex, row, wrap, space-evenly, center)
+	@include flexible(flex, row, wrap, space-evenly, center);
+	font-size: .9em;
 	
 }
 .banner-exp{
@@ -172,7 +173,7 @@
 //--------------------------------------BANNERS EXPERIENCE-------------------------------------->>>
 
 .pat-banner-text{
-	margin-top: 1em;
+	padding: 4em;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-evenly;
@@ -187,6 +188,7 @@
 		font-size: 1.5rem;
 		width: 80%;
 		color: $gris;
+		margin: 0;
 	}
 }
 .pat-banner-img{

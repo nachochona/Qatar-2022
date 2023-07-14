@@ -904,6 +904,7 @@ footer .footer .footer-section img {
   flex-flow: row, wrap;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 0.9em;
 }
 
 .banner-exp {
@@ -976,7 +977,7 @@ footer .footer .footer-section img {
 }
 
 .pat-banner-text {
-  margin-top: 1em;
+  padding: 4em;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -992,6 +993,7 @@ footer .footer .footer-section img {
   font-size: 1.5rem;
   width: 80%;
   color: #505050;
+  margin: 0;
 }
 
 .pat-banner-img {
@@ -2092,8 +2094,16 @@ footer .footer .footer-section img {
     margin: 0;
     font-size: 4em;
   }
+  #exp .exp-cul-top {
+    background-position: 30% 100%;
+    background-size: cover !important;
+  }
+  #exp .exp-cul-top h1 {
+    margin: 0;
+    font-size: 4em;
+  }
   #exp .pat-banner-text {
-    padding: 30px 0;
+    padding: 3em 0;
   }
   #exp .pat-banner-text .separator-gold {
     width: 90%;

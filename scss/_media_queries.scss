@@ -70,10 +70,18 @@
                 font-size: 4em;
             }
         }
+        .exp-cul-top{
+            background-position: 30% 100%;
+            background-size: cover !important;
+            h1{
+                margin: 0;
+                font-size: 4em;
+            }
+        }
 
         //BANNER 
         .pat-banner-text{
-            padding: 30px 0;
+            padding: 3em 0;
             .separator-gold{
                 width: 90%;
             }
