@@ -1,10 +1,24 @@
 @media (max-width:768px){
 
+
+
+
     .index-estadio{
+        background-size: contain;
+        height: 80vh !important;
         div{
-            width: 90% !important;
+            width: 70% !important;
             background-color: #000;
-            padding: 2em 1em !important;
+            padding: 1em .5em !important;
+            h2{
+                font-size: 1em !important;
+                a{
+                    font-size: 1.2em !important;
+                }
+            }
+            button{
+                font-size: 1.5em !important;
+            }
         }
     }
     #exp{
@@ -167,7 +181,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: .2em 1em !important;
+        padding: 0 1em !important;
         .nav-img-responsive{
             width: 100%;
             display: flex;
@@ -175,12 +189,13 @@
             align-items: center;
             a{
                 img{
-                    width: 150px;
+                    width: 100px;
                 }
             }
             .btn-nav-menu{
                 display: flex;
                 cursor: pointer;
+                font-size: 3em;
             }
         }
         .nav-menu{

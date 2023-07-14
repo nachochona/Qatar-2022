@@ -691,10 +691,13 @@ body {
   flex-flow: row wrap;
   padding-bottom: 8em;
   justify-content: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.2s all ease-in-out;
 }
 #main-index .std #index-estadios a {
-  border-left: 15px solid #baa256;
   transition: 0.2s all ease-in-out;
+  border-left: 15px solid #baa256;
   color: white;
   text-decoration: none;
   font-size: 1.5em;
@@ -715,6 +718,7 @@ body {
   color: #baa256;
   margin-bottom: 0.5em;
   background: rgba(2, 15, 42, 0.8666666667);
+  border-left: 5px solid #baa256;
 }
 #main-index .std #index-estadios a:nth-child(1) {
   background: url(../img/al-bayt.jpg);
@@ -756,12 +760,10 @@ body {
   background-position: 70% 0%;
   background-size: cover;
 }
-#main-index .std #index-estadios a:hover {
-  border-left: 15px solid white;
-}
 #main-index .std #index-estadios a:hover p {
   color: #020f2a;
   background: rgba(186, 162, 86, 0.8666666667);
+  border-left: 30px solid #020f2a;
 }
 
 footer {
@@ -2034,10 +2036,23 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .index-estadio {
+    background-size: contain;
+    height: 80vh !important;
+  }
   .index-estadio div {
-    width: 90% !important;
+    width: 70% !important;
     background-color: #000;
-    padding: 2em 1em !important;
+    padding: 1em 0.5em !important;
+  }
+  .index-estadio div h2 {
+    font-size: 1em !important;
+  }
+  .index-estadio div h2 a {
+    font-size: 1.2em !important;
+  }
+  .index-estadio div button {
+    font-size: 1.5em !important;
   }
   #exp .separator-2 {
     margin: 1em 0;
@@ -2169,7 +2184,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0.2em 1em !important;
+    padding: 0 1em !important;
   }
   #header .nav-img-responsive {
     width: 100%;
@@ -2178,11 +2193,12 @@ footer {
     align-items: center;
   }
   #header .nav-img-responsive a img {
-    width: 150px;
+    width: 100px;
   }
   #header .nav-img-responsive .btn-nav-menu {
     display: flex;
     cursor: pointer;
+    font-size: 3em;
   }
   #header .nav-menu {
     display: none;
