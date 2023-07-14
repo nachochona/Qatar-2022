@@ -12,11 +12,10 @@
         div{
             margin-top: 20vh ;
             width: 70% !important;
-            background-color: transparent !important;
+            background-color: #ffffff10 !important;
             padding: 1em .5em !important;
             box-shadow: none !important;
-            border: 1px solid #baa25620;
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(10px) !important;
             h2{
                 font-size: 1em !important;
                 color: $gris-dark !important;
