@@ -4,21 +4,28 @@
 
 
     .index-estadio{
-        background-image: url(https://images.adsttc.com/media/images/61d2/b175/3e4b/3194/cc00/00d1/slideshow/Lusail_Stadium_AFL_Architects_1.jpg?1641197935) !important;
-        background-size: 100%;
-        background-repeat: no-repeat;
+        //background-image: url("https://depor.com/resizer/2gv7UEcATFdPq30Jljj2Nr3Pe_Y=/980x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NXHF75ZRYVGPTP4VADMS2F3D6A.jpg") !important;
+        background-image: url(https://dobleamarilla-assets.tadevel-cdn.com/5c169835e03cbb22729c68fc/720.webp) !important;
+        background-position: 53% 0% !important;
         //height: 100vh !important;
+        align-items: start !important;
         div{
+            margin-top: 20vh ;
             width: 70% !important;
-            background-color: #000;
+            background-color: #30303030 !important;
             padding: 1em .5em !important;
+            box-shadow: none !important;
+            
             h2{
                 font-size: 1em !important;
+                color: $gris-dark !important;
                 a{
                     font-size: 1.2em !important;
                 }
             }
             button{
+                border: 1px solid $gris-dark !important;
+                color: $gris-dark !important;
                 font-size: 1.5em !important;
             }
         }

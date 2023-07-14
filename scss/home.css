@@ -542,7 +542,7 @@ body {
 .scroll {
   background-color: rgba(0, 0, 0, 0.7529411765);
   border-bottom: 4px solid #baa256;
-  padding: 0.6em 2em !important;
+  padding: 0.4em 2em 0 2em !important;
 }
 
 #main-index .index-estadio {
@@ -559,7 +559,6 @@ body {
 #main-index .index-estadio div {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   gap: 1em;
   background-color: rgba(48, 48, 48, 0.8);
@@ -2034,22 +2033,27 @@ footer {
 
 @media (max-width: 768px) {
   .index-estadio {
-    background-image: url(https://images.adsttc.com/media/images/61d2/b175/3e4b/3194/cc00/00d1/slideshow/Lusail_Stadium_AFL_Architects_1.jpg?1641197935) !important;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-image: url(https://dobleamarilla-assets.tadevel-cdn.com/5c169835e03cbb22729c68fc/720.webp) !important;
+    background-position: 53% 0% !important;
+    align-items: start !important;
   }
   .index-estadio div {
+    margin-top: 20vh;
     width: 70% !important;
-    background-color: #000;
+    background-color: rgba(48, 48, 48, 0.1882352941) !important;
     padding: 1em 0.5em !important;
+    box-shadow: none !important;
   }
   .index-estadio div h2 {
     font-size: 1em !important;
+    color: #121212 !important;
   }
   .index-estadio div h2 a {
     font-size: 1.2em !important;
   }
   .index-estadio div button {
+    border: 1px solid #121212 !important;
+    color: #121212 !important;
     font-size: 1.5em !important;
   }
   #exp .separator-2 {
