@@ -2112,6 +2112,10 @@ footer .footer .footer-section img {
   #exp .pat-banner-img div {
     width: 100%;
   }
+  #exp .des-doha-exp {
+    font-size: 0.7em;
+    padding: 2em 0;
+  }
   #exp .separator-exp {
     display: flex !important;
   }
