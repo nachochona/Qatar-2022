@@ -35,7 +35,6 @@ let Patrimonio = [
     img_c: "https://img.lagaceta.com.ar/fotos/notas/2022/08/19/mundial-2022-hacer-entre-partido-partido-957553-181058.jpg",
 },
 ]
-console.log(Patrimonio)
 const contenedorPat = document.getElementById("exp-banner-pat")
 
 function mostrarBannerExp(items){
