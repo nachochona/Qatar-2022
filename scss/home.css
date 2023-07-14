@@ -2039,11 +2039,11 @@ footer .footer .footer-section img {
   .index-estadio div {
     margin-top: 20vh;
     width: 70% !important;
-    background-color: rgba(0, 0, 0, 0.062745098) !important;
+    background-color: rgba(0, 0, 0, 0.0196078431) !important;
     padding: 1em 0.5em !important;
     box-shadow: none !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-            backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+            backdrop-filter: blur(5px) !important;
   }
   .index-estadio div h2 {
     font-size: 1em !important;
