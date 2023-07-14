@@ -2334,6 +2334,12 @@ footer .footer .footer-section img {
   footer .footer img {
     width: 15em;
   }
+  footer .footer .footer-section h3 {
+    font-size: 1.8em;
+  }
+  footer .footer .footer-section a {
+    font-size: 1.2em;
+  }
 }
 @media (max-width: 576px) {
   .naav .container a img {
