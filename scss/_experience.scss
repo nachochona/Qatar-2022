@@ -1,6 +1,5 @@
 #exp{
 	background: #fff;
-	height: 300vh;
 	
 }
 .video{
@@ -147,6 +146,7 @@
 			font-weight: 600;
 		}
 		button{
+			font-size: .8em;
 			font-weight: 700;
 			width: 150px;
 		}
@@ -159,10 +159,11 @@
 
 
 .separator-exp{
-	background: #00000010;
-	height: 0px;
+	background: $oro-2;
+	display: none;
+	height: 1px;
 	width: 100%;
-	margin: .1em 0;
+	margin: 1em 0;
 }
 
 .pat-banner-text{

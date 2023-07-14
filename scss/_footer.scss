@@ -1,43 +1,45 @@
 footer{
     background-color: $azul;
-}
-.fifa-socios{
-    @include flexible(flex, row, wrap, space-evenly, center);
-    padding: 1em 0;
-    background-color: $oro-2;
-    img{
-        max-width: 10%;
+    .fifa-socios{
+        @include flexible(flex, row, wrap, space-evenly, center);
+        padding: 1em 0;
+        background-color: $oro-2;
+        img{
+            max-width: 8em;
+        }
+    }
+    .footer{
+        padding: 10em 5em;
+        img{
+            width: 25%;
+        }
+        background: $azul;
+        @include flexible(flex, row, nowrap, space-between, start);
+        .footer-section{
+            width: 30%;
+            @include flexible(flex, column, nowrap, space-between, center);
+            flex-direction: column;
+            h3{
+                font-size: 2rem;
+                font-weight: 900;
+                color: $oro-2;
+            }
+            a{
+                font-size: 1.5rem;
+                color: $oro-2;
+                text-decoration: none;
+                transition: 1s all;
+                &:hover{
+                    color: white;
+                }
+            }
+            img{
+                background-color: #000;
+                width: 10px;
+            }
+        }
     }
 }
 
-.footer{
-    padding: 10em 0;
-    img{
-        width: 30%;
-    }
-    background: $azul;
-    @include flexible(flex, row, nowrap, space-evenly, center);
-    .footer-section{
-        width: 30%;
-        @include flexible(flex, column, nowrap, space-between, center);
-        flex-direction: column;
-        h3{
-            font-size: 2rem;
-            font-weight: 900;
-            color: $oro-2;
-        }
-        a{
-            font-size: 1.5rem;
-            color: $oro-2;
-            text-decoration: none;
-            transition: 1s all;
-            &:hover{
-                color: white;
-            }
-        }
-        img{
-            background-color: #000;
-            width: 10px;
-        }
-    }
-}
+
+

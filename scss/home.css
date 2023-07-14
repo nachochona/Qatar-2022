@@ -11,10 +11,6 @@ body {
   background: url(https://static.vecteezy.com/system/resources/previews/004/541/666/non_2x/football-2022-tournament-background-illustration-football-pattern-for-banner-card-website-burgundy-color-national-flag-qatar-vector.jpg) no-repeat center center fixed;
 }
 
-.b-g-white {
-  background-color: white;
-}
-
 .space {
   width: 100%;
   background: url(../img/space.png);
@@ -542,7 +538,9 @@ body {
 .scroll {
   background-color: rgba(0, 0, 0, 0.7529411765);
   border-bottom: 4px solid #baa256;
-  padding: 0.4em 2em 0 2em !important;
+  padding: 0.4em 2em 0.2em 2em !important;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 #main-index .index-estadio {
@@ -561,11 +559,13 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  background-color: rgba(48, 48, 48, 0.8);
+  background-color: rgba(48, 48, 48, 0.3764705882);
   width: 500px;
   padding: 2em 5em;
   margin-bottom: 2em;
   box-shadow: 0 0 50px 0 #303030;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 #main-index .index-estadio div h2 {
   font-size: 1.5em;
@@ -765,8 +765,7 @@ body {
 footer {
   background-color: #020f2a;
 }
-
-.fifa-socios {
+footer .fifa-socios {
   display: flex;
   flex-flow: row, wrap;
   justify-content: space-evenly;
@@ -774,22 +773,21 @@ footer {
   padding: 1em 0;
   background-color: #baa256;
 }
-.fifa-socios img {
-  max-width: 10%;
+footer .fifa-socios img {
+  max-width: 8em;
 }
-
-.footer {
-  padding: 10em 0;
+footer .footer {
+  padding: 10em 5em;
   background: #020f2a;
   display: flex;
   flex-flow: row, nowrap;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-between;
+  align-items: start;
 }
-.footer img {
-  width: 30%;
+footer .footer img {
+  width: 25%;
 }
-.footer .footer-section {
+footer .footer .footer-section {
   width: 30%;
   display: flex;
   flex-flow: column, nowrap;
@@ -797,28 +795,27 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-.footer .footer-section h3 {
+footer .footer .footer-section h3 {
   font-size: 2rem;
   font-weight: 900;
   color: #baa256;
 }
-.footer .footer-section a {
+footer .footer .footer-section a {
   font-size: 1.5rem;
   color: #baa256;
   text-decoration: none;
   transition: 1s all;
 }
-.footer .footer-section a:hover {
+footer .footer .footer-section a:hover {
   color: white;
 }
-.footer .footer-section img {
+footer .footer .footer-section img {
   background-color: #000;
   width: 10px;
 }
 
 #exp {
   background: #fff;
-  height: 300vh;
 }
 
 .video video {
@@ -960,6 +957,7 @@ footer {
   font-weight: 600;
 }
 .banner-exp .pat-info button {
+  font-size: 0.8em;
   font-weight: 700;
   width: 150px;
 }
@@ -970,10 +968,11 @@ footer {
 }
 
 .separator-exp {
-  background: rgba(0, 0, 0, 0.062745098);
-  height: 0px;
+  background: #baa256;
+  display: none;
+  height: 1px;
   width: 100%;
-  margin: 0.1em 0;
+  margin: 1em 0;
 }
 
 .pat-banner-text {
@@ -2040,9 +2039,12 @@ footer {
   .index-estadio div {
     margin-top: 20vh;
     width: 70% !important;
-    background-color: rgba(48, 48, 48, 0.1882352941) !important;
+    background-color: transparent !important;
     padding: 1em 0.5em !important;
     box-shadow: none !important;
+    border: 1px solid rgba(186, 162, 86, 0.1254901961);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
   }
   .index-estadio div h2 {
     font-size: 1em !important;
@@ -2056,54 +2058,60 @@ footer {
     color: #121212 !important;
     font-size: 1.5em !important;
   }
-  #exp .separator-2 {
-    margin: 1em 0;
-  }
-  .des-doha {
+  #exp .des-doha {
     flex-direction: column;
     height: auto;
     padding: 0;
   }
-  .des-doha button {
+  #exp .des-doha button {
     margin: 3em 0;
   }
-  .banner-exp {
+  #exp .banner-exp {
     flex-flow: column wrap;
   }
-  .banner-exp .exp-b-img-p {
+  #exp .banner-exp .exp-b-img-p {
     width: 100%;
   }
-  .banner-exp .exp-b-img-cu {
+  #exp .banner-exp .exp-b-img-cu {
     width: 100%;
   }
-  .banner-exp .exp-b-img-co {
+  #exp .banner-exp .exp-b-img-co {
     width: 100%;
   }
-  .banner-exp .pat-info {
+  #exp .banner-exp .pat-info {
     width: 100%;
   }
-  .banner-exp .pat-info p {
+  #exp .banner-exp .pat-info p {
     margin-bottom: 30px;
   }
-  .exp-pat-top {
+  #exp .exp-pat-top {
     background-position: 10% 70%;
   }
-  .exp-pat-top h1 {
+  #exp .exp-pat-top h1 {
     margin: 0;
   }
-  .pat-banner-text {
+  #exp .pat-banner-text {
     padding: 30px 0;
     height: 55vh;
   }
-  .pat-banner-text h2 {
+  #exp .pat-banner-text h2 {
     font-size: 2.5rem;
     width: 80%;
   }
-  .pat-banner-img {
+  #exp .pat-banner-img {
     flex-direction: column;
   }
-  .pat-banner-img div {
+  #exp .pat-banner-img div {
     width: 100%;
+  }
+  #exp .separator-exp {
+    display: flex !important;
+  }
+  #exp .pat-info p {
+    font-size: 1.1em;
+  }
+  #exp .pat-info button {
+    font-size: 0.8em;
   }
   .est-start {
     justify-content: flex-end;
@@ -2311,6 +2319,22 @@ footer {
     width: 20em !important;
     height: 12em !important;
   }
+  footer .fifa-socios img {
+    max-width: 12%;
+  }
+  footer .footer {
+    padding: 5em 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+  }
+  footer .footer .footer-section {
+    width: 100%;
+    margin: 10px 0;
+  }
+  footer .footer img {
+    width: 15em;
+  }
 }
 @media (max-width: 576px) {
   .naav .container a img {
@@ -2356,16 +2380,8 @@ footer {
   #main-index .std #index-estadios a p {
     font-size: 1.3em !important;
   }
-  .footer {
-    padding: 2%;
-    flex-direction: column;
-  }
-  .footer .footer-section {
-    width: 100%;
-    margin: 10px 0;
-  }
-  .footer img {
-    width: 50%;
+  #exp .pat-info {
+    align-items: start;
   }
   .exp-com-top h1 {
     font-size: 4rem;

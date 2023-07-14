@@ -12,10 +12,11 @@
         div{
             margin-top: 20vh ;
             width: 70% !important;
-            background-color: #30303030 !important;
+            background-color: transparent !important;
             padding: 1em .5em !important;
             box-shadow: none !important;
-            
+            border: 1px solid #baa25620;
+            backdrop-filter: blur(5px);
             h2{
                 font-size: 1em !important;
                 color: $gris-dark !important;
@@ -31,59 +32,70 @@
         }
     }
     #exp{
-        .separator-2{
-            margin: 1em 0;
-        }
-    }
-    .des-doha{
-        flex-direction: column;
-        height: auto;
-        padding: 0;
-        button{
-            margin: 3em 0;
-        }
-    }
-    .banner-exp{
-        flex-flow: column wrap;
-        .exp-b-img-p {
-            
-            width: 100%;
-        }
-        .exp-b-img-cu {
-            
-            width: 100%;
-        }
-        .exp-b-img-co {
-            
-            width: 100%;
-        }
-        .pat-info{
-            width: 100%;
-            p{
-                margin-bottom: 30px;
+        .des-doha{
+            flex-direction: column;
+            height: auto;
+            padding: 0;
+            button{
+                margin: 3em 0;
             }
         }
-    }
-    .exp-pat-top{
-        background-position: 10% 70%;
-        h1{
-            margin: 0;
+        .banner-exp{
+            flex-flow: column wrap;
+            .exp-b-img-p {
+                
+                width: 100%;
+            }
+            .exp-b-img-cu {
+                
+                width: 100%;
+            }
+            .exp-b-img-co {
+                
+                width: 100%;
+            }
+            .pat-info{
+                width: 100%;
+                p{
+                    margin-bottom: 30px;
+                }
+            }
         }
-    }
-    .pat-banner-text{
-        padding: 30px 0;
-        height: 55vh;
-        h2{
-            font-size: 2.5rem;
-            width: 80%;
+        .exp-pat-top{
+            background-position: 10% 70%;
+            h1{
+                margin: 0;
+            }
         }
-    }
-    .pat-banner-img{
-        flex-direction: column;
-        div{
-            width: 100%;
+        .pat-banner-text{
+            padding: 30px 0;
+            height: 55vh;
+            h2{
+                font-size: 2.5rem;
+                width: 80%;
+            }
         }
+        .pat-banner-img{
+            flex-direction: column;
+            div{
+                width: 100%;
+            }
+        }
+        .separator-exp{
+            display: flex !important;
+        }
+        .pat-info{
+            p{
+                font-size: 1.1em;
+            }
+            button{
+                font-size: .8em;
+            }
+        }
+        
     }
+    
+    
     .est-start {
         justify-content: flex-end;
         h1 {
@@ -338,6 +350,28 @@
           
     }
     
+    footer{
+        .fifa-socios{
+            img{
+                max-width: 12%;
+            }
+        }
+        .footer{
+            padding: 5em 0;
+            flex-direction: column;
+            align-items: center;
+            gap: 5em;
+            .footer-section{
+                width: 100%;
+                margin: 10px 0;
+            }
+            img{
+                width: 15em;
+            }
+            
+        }
+    }
+    
     
 }
 
@@ -403,19 +437,16 @@
    }
 
 
-   
-    .footer{
-        padding: 2%;
-        flex-direction: column;
-        .footer-section{
-            width: 100%;
-            margin: 10px 0;
-        }
-        img{
-            width: 50%;
-        }
-        
+
+   #exp{
+    .pat-info{
+        align-items: start;
     }
+   }
+
+
+   
+    
     .exp-com-top{
         h1{
             font-size: 4rem;
