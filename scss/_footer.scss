@@ -2,7 +2,6 @@ footer{
     background-color: $azul;
     .fifa-socios{
         @include flexible(flex, row, wrap, space-evenly, center);
-        padding: 1em 0;
         background-color: $oro-2;
         img{
             max-width: 8em;

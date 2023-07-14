@@ -770,7 +770,6 @@ footer .fifa-socios {
   flex-flow: row, wrap;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1em 0;
   background-color: #baa256;
 }
 footer .fifa-socios img {
@@ -2099,6 +2098,14 @@ footer .footer .footer-section img {
     background-size: cover !important;
   }
   #exp .exp-cul-top h1 {
+    margin: 0;
+    font-size: 4em;
+  }
+  #exp .exp-com-top {
+    background-position: 50% 100%;
+    background-size: cover !important;
+  }
+  #exp .exp-com-top h1 {
     margin: 0;
     font-size: 4em;
   }
