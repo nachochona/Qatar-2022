@@ -2061,6 +2061,7 @@ footer .footer .footer-section img {
     flex-direction: column;
     height: auto;
     padding: 0;
+    font-size: 0.7em;
   }
   #exp .des-doha button {
     margin: 3em 0;
