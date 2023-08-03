@@ -816,14 +816,17 @@ footer .footer .footer-section img {
 #exp {
   background: #fff;
 }
-
-.video video {
+#exp .video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#exp .video video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.button {
+#exp .button {
   --offset: 0.8em;
   --border-size: 1px;
   display: block;
@@ -845,10 +848,10 @@ footer .footer .footer-section img {
   transition: background 0.8s ease;
   width: 180px;
 }
-.button:hover {
+#exp .button:hover {
   background: rgba(100, 0, 0, 0.03);
 }
-.button__horizontal, .button__vertical {
+#exp .button__horizontal, #exp .button__vertical {
   position: absolute;
   top: var(--horizontal-offset, 0);
   right: var(--vertical-offset, 0);
@@ -857,45 +860,44 @@ footer .footer .footer-section img {
   transition: transform 0.8s ease;
   will-change: transform;
 }
-.button__horizontal::before, .button__vertical::before {
+#exp .button__horizontal::before, #exp .button__vertical::before {
   content: "";
   position: absolute;
   border: inherit;
 }
-.button__horizontal {
+#exp .button__horizontal {
   --vertical-offset: calc(var(--offset) * -1);
   border-top: var(--border-size) solid currentcolor;
   border-bottom: var(--border-size) solid currentcolor;
 }
-.button__horizontal::before {
+#exp .button__horizontal::before {
   top: calc(var(--vertical-offset) - var(--border-size));
   bottom: calc(var(--vertical-offset) - var(--border-size));
   left: calc(var(--vertical-offset) * -1);
   right: calc(var(--vertical-offset) * -1);
 }
-.button:hover .button__horizontal {
+#exp .button:hover #exp .button__horizontal {
   transform: scaleX(0);
 }
-.button__vertical {
+#exp .button__vertical {
   --horizontal-offset: calc(var(--offset) * -1);
   border-left: var(--border-size) solid currentcolor;
   border-right: var(--border-size) solid currentcolor;
 }
-.button__vertical::before {
+#exp .button__vertical::before {
   top: calc(var(--horizontal-offset) * -1);
   bottom: calc(var(--horizontal-offset) * -1);
   left: calc(var(--horizontal-offset) - var(--border-size));
   right: calc(var(--horizontal-offset) - var(--border-size));
 }
-.button:hover .button__vertical {
+#exp .button:hover #exp .button__vertical {
   transform: scaleY(0);
 }
-.button a {
+#exp .button a {
   text-decoration: none;
   color: #baa256;
 }
-
-.des-doha {
+#exp .des-doha {
   padding: 5em 0;
   width: 100%;
   background-color: #8a1539;
@@ -905,15 +907,14 @@ footer .footer .footer-section img {
   align-items: center;
   font-size: 0.9em;
 }
-
-.banner-exp {
+#exp .banner-exp {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 100%;
   background-color: white;
 }
-.banner-exp .exp-b-img-p {
+#exp .banner-exp .exp-b-img-p {
   background: url(../img/patrimonio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -921,7 +922,7 @@ footer .footer .footer-section img {
   height: 420px;
   width: 50%;
 }
-.banner-exp .exp-b-img-cu {
+#exp .banner-exp .exp-b-img-cu {
   background: url(../img/cultura.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -929,7 +930,7 @@ footer .footer .footer-section img {
   height: 420px;
   width: 50%;
 }
-.banner-exp .exp-b-img-co {
+#exp .banner-exp .exp-b-img-co {
   background: url(../img/comida.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -937,7 +938,7 @@ footer .footer .footer-section img {
   height: 420px;
   width: 50%;
 }
-.banner-exp .pat-info {
+#exp .banner-exp .pat-info {
   display: flex;
   flex-flow: column, nowrap;
   justify-content: space-evenly;
@@ -946,36 +947,33 @@ footer .footer .footer-section img {
   padding: 3em;
   width: 50%;
 }
-.banner-exp .pat-info h2 {
+#exp .banner-exp .pat-info h2 {
   font-size: 3rem;
   color: #baa256;
   font-weight: 700;
 }
-.banner-exp .pat-info p {
+#exp .banner-exp .pat-info p {
   font-size: 1.2rem;
   color: #666;
   font-weight: 600;
 }
-.banner-exp .pat-info button {
+#exp .banner-exp .pat-info button {
   font-size: 0.8em;
   font-weight: 700;
   width: 150px;
 }
-
-.exp-c-p {
+#exp .exp-c-p {
   -webkit-clip-path: polygon(0 42%, 0 0, 100% 0, 100% 100%, 0 100%, 0 58%, 5% 50%);
           clip-path: polygon(0 42%, 0 0, 100% 0, 100% 100%, 0 100%, 0 58%, 5% 50%);
 }
-
-.separator-exp {
+#exp .separator-exp {
   background: #baa256;
   display: none;
   height: 1px;
   width: 100%;
   margin: 1em 0;
 }
-
-.pat-banner-text {
+#exp .pat-banner-text {
   padding: 4em;
   display: flex;
   flex-flow: column nowrap;
@@ -983,36 +981,34 @@ footer .footer .footer-section img {
   align-items: center;
   height: auto;
 }
-.pat-banner-text h2 {
+#exp .pat-banner-text h2 {
   font-size: 3rem;
   font-weight: 500;
   color: #505050;
 }
-.pat-banner-text p {
+#exp .pat-banner-text p {
   font-size: 1.5rem;
   width: 80%;
   color: #505050;
   margin: 0;
 }
-
-.pat-banner-img {
+#exp .pat-banner-img {
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 1%;
 }
-.pat-banner-img div {
+#exp .pat-banner-img div {
   width: 35%;
   height: 309px;
   padding: 5px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 42%, 95% 50%, 100% 58%, 100% 100%, 0 100%, 0 58%, 5% 50%, 0 42%);
           clip-path: polygon(0 0, 100% 0, 100% 42%, 95% 50%, 100% 58%, 100% 100%, 0 100%, 0 58%, 5% 50%, 0 42%);
 }
-.pat-banner-img div img {
+#exp .pat-banner-img div img {
   width: 100%;
   height: 100%;
 }
-
-.exp-pat-top {
+#exp .exp-pat-top {
   background: url(https://s1.significados.com/foto/desierto.-camello.jpg);
   background-position: 40% 58%;
   height: 80vh;
@@ -1021,15 +1017,14 @@ footer .footer .footer-section img {
   justify-content: center;
   align-items: center;
 }
-.exp-pat-top h1 {
+#exp .exp-pat-top h1 {
   margin: 0 0 0 40%;
   font-size: 6em;
   font-weight: 900;
   color: white;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
-
-.exp-cul-top {
+#exp .exp-cul-top {
   background: url(https://www.visitqatar.qa/content/dam/visitqatar/campaigns/gc/paid-campaign/backgrounds/18944_DigitalAssetsSupply_1920x1080_All_Without_Keychain6.jpg/_jcr_content/renditions/medium-1280px.jpeg);
   background-position: 20% 45%;
   background-size: cover;
@@ -1039,14 +1034,13 @@ footer .footer .footer-section img {
   justify-content: center;
   align-items: center;
 }
-.exp-cul-top h1 {
+#exp .exp-cul-top h1 {
   font-size: 8rem;
   font-weight: 900;
   color: white;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
-
-.exp-com-top {
+#exp .exp-com-top {
   background: url(https://hospitality.fifa.com/media/3126/header_cuisine.jpg);
   background-position: 50% 50%;
   background-size: cover;
@@ -1056,7 +1050,7 @@ footer .footer .footer-section img {
   justify-content: center;
   align-items: center;
 }
-.exp-com-top h1 {
+#exp .exp-com-top h1 {
   margin: 5% 0 0 0;
   font-size: 6rem;
   font-weight: 900;
@@ -2269,6 +2263,16 @@ footer .footer .footer-section img {
   .visible {
     display: flex !important;
     visibility: visible;
+  }
+  #exp .video {
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3137254902);
+    padding-top: 7vh;
+  }
+  #exp .video video {
+    width: 200%;
+    -o-object-fit: fill;
+       object-fit: fill;
   }
   .div-est .stadiums-main {
     flex-flow: column-reverse nowrap;
