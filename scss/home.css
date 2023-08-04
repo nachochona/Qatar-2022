@@ -826,81 +826,20 @@ footer .footer .footer-section img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#exp .button {
-  --offset: 0.8em;
-  --border-size: 1px;
-  display: block;
-  position: relative;
-  padding: 1.75em 2.5em;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 0;
-  background: transparent;
-  color: #baa256;
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  outline: none;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 0;
-  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
-  transition: background 0.8s ease;
-  width: 180px;
-}
-#exp .button:hover {
-  background: rgba(100, 0, 0, 0.03);
-}
-#exp .button__horizontal, #exp .button__vertical {
-  position: absolute;
-  top: var(--horizontal-offset, 0);
-  right: var(--vertical-offset, 0);
-  bottom: var(--horizontal-offset, 0);
-  left: var(--vertical-offset, 0);
-  transition: transform 0.8s ease;
-  will-change: transform;
-}
-#exp .button__horizontal::before, #exp .button__vertical::before {
-  content: "";
-  position: absolute;
-  border: inherit;
-}
-#exp .button__horizontal {
-  --vertical-offset: calc(var(--offset) * -1);
-  border-top: var(--border-size) solid currentcolor;
-  border-bottom: var(--border-size) solid currentcolor;
-}
-#exp .button__horizontal::before {
-  top: calc(var(--vertical-offset) - var(--border-size));
-  bottom: calc(var(--vertical-offset) - var(--border-size));
-  left: calc(var(--vertical-offset) * -1);
-  right: calc(var(--vertical-offset) * -1);
-}
-#exp .button:hover #exp .button__horizontal {
-  transform: scaleX(0);
-}
-#exp .button__vertical {
-  --horizontal-offset: calc(var(--offset) * -1);
-  border-left: var(--border-size) solid currentcolor;
-  border-right: var(--border-size) solid currentcolor;
-}
-#exp .button__vertical::before {
-  top: calc(var(--horizontal-offset) * -1);
-  bottom: calc(var(--horizontal-offset) * -1);
-  left: calc(var(--horizontal-offset) - var(--border-size));
-  right: calc(var(--horizontal-offset) - var(--border-size));
-}
-#exp .button:hover #exp .button__vertical {
-  transform: scaleY(0);
-}
-#exp .button a {
-  text-decoration: none;
-  color: #baa256;
-}
 #exp .des-doha {
   padding: 5em 0;
   width: 100%;
   background-color: #8a1539;
+  display: flex;
+  flex-flow: row, wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.9em;
+}
+#exp .des-exp {
+  padding: 4em 0;
+  width: 100%;
+  background-color: #121212;
   display: flex;
   flex-flow: row, wrap;
   justify-content: space-evenly;
@@ -1058,11 +997,82 @@ footer .footer .footer-section img {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
-#stadiumsss {
-  background: #fff;
+.button {
+  --offset: 0.8em;
+  --border-size: 1px;
+  display: block;
+  position: relative;
+  padding: 1.75em 2.5em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background: transparent;
+  color: #baa256;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  transition: background 0.8s ease;
+  width: 180px;
+}
+.button:hover {
+  background: rgba(100, 0, 0, 0.03);
+}
+.button__horizontal, .button__vertical {
+  position: absolute;
+  top: var(--horizontal-offset, 0);
+  right: var(--vertical-offset, 0);
+  bottom: var(--horizontal-offset, 0);
+  left: var(--vertical-offset, 0);
+  transition: transform 0.8s ease;
+  will-change: transform;
+}
+.button__horizontal::before, .button__vertical::before {
+  content: "";
+  position: absolute;
+  border: inherit;
+}
+.button__horizontal {
+  --vertical-offset: calc(var(--offset) * -1);
+  border-top: var(--border-size) solid currentcolor;
+  border-bottom: var(--border-size) solid currentcolor;
+}
+.button__horizontal::before {
+  top: calc(var(--vertical-offset) - var(--border-size));
+  bottom: calc(var(--vertical-offset) - var(--border-size));
+  left: calc(var(--vertical-offset) * -1);
+  right: calc(var(--vertical-offset) * -1);
+}
+.button:hover .button__horizontal {
+  transform: scaleX(0);
+}
+.button__vertical {
+  --horizontal-offset: calc(var(--offset) * -1);
+  border-left: var(--border-size) solid currentcolor;
+  border-right: var(--border-size) solid currentcolor;
+}
+.button__vertical::before {
+  top: calc(var(--horizontal-offset) * -1);
+  bottom: calc(var(--horizontal-offset) * -1);
+  left: calc(var(--horizontal-offset) - var(--border-size));
+  right: calc(var(--horizontal-offset) - var(--border-size));
+}
+.button:hover .button__vertical {
+  transform: scaleY(0);
+}
+.button a {
+  text-decoration: none;
+  color: #baa256;
 }
 
-.stadiums {
+#Stadium {
+  background: #fff;
+}
+#Stadium .stadiums {
   width: 100%;
   height: 100vh;
   background: url(../img/lusail-stadium.jpg);
@@ -1070,8 +1080,7 @@ footer .footer .footer-section img {
   background-repeat: no-repeat;
   background-position: start;
 }
-
-.stadiums-top {
+#Stadium .stadiums .stadiums-top {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1081,36 +1090,41 @@ footer .footer .footer-section img {
   padding: 0;
   margin: 0;
 }
-.stadiums-top h1 {
+#Stadium .stadiums .stadiums-top h1 {
   margin-top: 2em;
   text-shadow: 2px 2px 10px rgba(186, 162, 86, 0.6);
   width: 70%;
   font-size: 5em;
   color: #e6e6e6;
 }
-.stadiums-top p {
-  background: linear-gradient(to right, #baa256, white);
+#Stadium .stadiums .stadiums-top div {
+  width: 100%;
+  background: linear-gradient(to right, rgba(186, 162, 86, 0.3137254902), rgba(255, 255, 255, 0.3137254902));
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Stadium .stadiums .stadiums-top div p {
+  padding: 0.5em 0;
+  margin: 0;
   font-size: 1.8rem;
   color: rgb(50, 50, 50);
-  width: 100%;
+  width: 90%;
   text-align: center;
-  padding: 5px 0;
 }
-
-.div-est {
+#Stadium .div-est {
   width: 100%;
-  background-color: #baa256;
 }
-
-.stadiums-main {
+#Stadium .div-est .stadiums-main {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   height: 70vh;
   padding: 3%;
-  background-color: #fff;
 }
-.stadiums-main .stadiums-main-info {
+#Stadium .div-est .stadiums-main .stadiums-main-info {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -1119,17 +1133,17 @@ footer .footer .footer-section img {
   width: 35%;
   transition: all 1s;
 }
-.stadiums-main .stadiums-main-info h3 {
+#Stadium .div-est .stadiums-main .stadiums-main-info h3 {
   font-size: 2.5rem;
   color: #8a1539;
   font-weight: 900;
 }
-.stadiums-main .stadiums-main-info h4 {
+#Stadium .div-est .stadiums-main .stadiums-main-info h4 {
   font-size: 1.5rem;
   color: #baa256;
   font-weight: 900;
 }
-.stadiums-main .stadiums-main-info p {
+#Stadium .div-est .stadiums-main .stadiums-main-info p {
   display: flex;
   align-items: center;
   text-align: center;
@@ -1137,11 +1151,11 @@ footer .footer .footer-section img {
   font-size: 1.5rem;
   color: rgb(100, 100, 100);
 }
-.stadiums-main .stadiums-main-info .part-tittle {
+#Stadium .div-est .stadiums-main .stadiums-main-info .part-tittle {
   font-size: 2rem;
   color: rgb(30, 30, 30);
 }
-.stadiums-main .stadiums-main-info .part {
+#Stadium .div-est .stadiums-main .stadiums-main-info .part {
   font-weight: 600;
   border: 1px #e6e6e6 solid;
   font-size: 1.4rem;
@@ -1150,7 +1164,7 @@ footer .footer .footer-section img {
   width: 70%;
   text-align: center;
 }
-.stadiums-main .stadiums-main-info .btn-est {
+#Stadium .div-est .stadiums-main .stadiums-main-info .btn-est {
   display: inline-block;
   border-radius: 4px;
   background-color: #8a1539;
@@ -1165,13 +1179,13 @@ footer .footer .footer-section img {
           clip-path: polygon(50% 0%, 90% 10%, 100% 60%, 90% 100%, 10% 100%, 0% 60%, 10% 10%);
   height: 15%;
 }
-.stadiums-main .stadiums-main-info .btn-est span {
+#Stadium .div-est .stadiums-main .stadiums-main-info .btn-est span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-.stadiums-main .stadiums-main-info .btn-est span:after {
+#Stadium .div-est .stadiums-main .stadiums-main-info .btn-est span:after {
   content: "»";
   position: absolute;
   opacity: 0;
@@ -1179,23 +1193,26 @@ footer .footer .footer-section img {
   right: -20px;
   transition: 0.5s;
 }
-.stadiums-main .stadiums-main-info .btn-est:hover span {
+#Stadium .div-est .stadiums-main .stadiums-main-info .btn-est:hover span {
   padding-right: 25px;
 }
-.stadiums-main .stadiums-main-info .btn-est:hover span:after {
+#Stadium .div-est .stadiums-main .stadiums-main-info .btn-est:hover span:after {
   opacity: 1;
   right: 0;
 }
-.stadiums-main .stadiums-main-info .btn-est span a {
+#Stadium .div-est .stadiums-main .stadiums-main-info .btn-est span a {
   text-decoration: none;
   color: white;
 }
-.stadiums-main img {
+#Stadium .div-est .stadiums-main img {
   max-width: 65%;
   height: 100%;
 }
-
-.fifa-world-cup {
+#Stadium .separator-est-end {
+  height: 1em;
+  width: 100%;
+}
+#Stadium .fifa-world-cup {
   background-color: #8a1539;
 }
 
@@ -1228,6 +1245,9 @@ footer .footer .footer-section img {
   color: white;
   text-shadow: 2px 2px 10px black;
   font-size: 2.5rem;
+  background: rgba(0, 0, 0, 0.2509803922);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
 }
 
 .est-start-al-bayt {
@@ -1266,14 +1286,14 @@ footer .footer .footer-section img {
 }
 
 .est-start-al-janoub {
-  background: url(/img/al-janoub.jpg);
+  background: url("https://a.espncdn.com/photo/2021/1107/r934263_1296x729_16-9.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .est-start-al-thumama {
-  background: url(/img/Al-thumama.jpg);
+  background: url("https://digitalhub.fifa.com/transform/51c787c0-297c-454d-84c7-c931cd9bcc7d/FIFA-World-Cup-Qatar-2022-Venue-Aerial-Views");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1291,33 +1311,32 @@ footer .footer .footer-section img {
      object-fit: cover;
 }
 
-.est-info {
+#pag-estadios .est-info {
   display: flex;
   flex-flow: column, nowrap;
   justify-content: center;
   align-items: center;
   padding: 3% 0;
 }
-.est-info .est-ficha {
+#pag-estadios .est-info .est-ficha {
   height: 50%;
   width: 70%;
   background: #fff;
 }
-.est-info .est-ficha h2 {
+#pag-estadios .est-info .est-ficha h2 {
   padding: 1% 0;
-  font-size: 4rem;
+  font-size: 4em;
   color: #505050;
 }
-.est-info .est-ficha p {
+#pag-estadios .est-info .est-ficha p {
   font-size: 1.5rem;
   color: #909090;
 }
-.est-info .est-ficha h3 {
+#pag-estadios .est-info .est-ficha h3 {
   font-size: 2rem;
   color: #909090;
 }
-
-.est-match {
+#pag-estadios .est-match {
   display: flex;
   flex-flow: column, nowrap;
   justify-content: center;
@@ -1326,40 +1345,40 @@ footer .footer .footer-section img {
   width: 100%;
   padding-top: 3%;
 }
-.est-match .est-match-title {
+#pag-estadios .est-match .est-match-title {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.est-match .est-match-title img {
+#pag-estadios .est-match .est-match-title img {
   width: 30%;
 }
-.est-match .est-match-title h4 {
+#pag-estadios .est-match .est-match-title h4 {
   font-size: 4rem;
   font-weight: 900;
   color: #8a1539;
 }
-.est-match .est-match-title p {
+#pag-estadios .est-match .est-match-title p {
   font-size: 2.5rem;
   font-weight: bold;
   color: #baa256;
 }
-.est-match .est-match-info {
+#pag-estadios .est-match .est-match-info {
   width: 100%;
   text-align: center;
   font-size: 2rem;
   color: #8a1539;
   font-weight: 500;
 }
-.est-match .est-match-info .partido {
+#pag-estadios .est-match .est-match-info .partido {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
 }
-.est-match .est-match-info .partido .match-div {
+#pag-estadios .est-match .est-match-info .partido .match-div {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -1368,53 +1387,49 @@ footer .footer .footer-section img {
   height: 200px;
   width: 45%;
   border: 2px solid #e6e6e6;
-  -webkit-clip-path: polygon(5% 50%, 0 58%, 0 100%, 20% 100%, 30% 95%, 40% 100%, 60% 100%, 70% 95%, 80% 100%, 100% 100%, 100% 58%, 95% 50%, 100% 42%, 100% 0, 80% 0, 70% 5%, 60% 0, 40% 0, 30% 5%, 20% 0, 0 0, 0 42%);
-          clip-path: polygon(5% 50%, 0 58%, 0 100%, 20% 100%, 30% 95%, 40% 100%, 60% 100%, 70% 95%, 80% 100%, 100% 100%, 100% 58%, 95% 50%, 100% 42%, 100% 0, 80% 0, 70% 5%, 60% 0, 40% 0, 30% 5%, 20% 0, 0 0, 0 42%);
   background-color: #000;
 }
-.est-match .est-match-info .partido .match-div span {
+#pag-estadios .est-match .est-match-info .partido .match-div span {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  width: 33%;
   font-size: 1.7rem;
   color: #baa256;
 }
-.est-match .est-match-info .partido .match-div span div {
+#pag-estadios .est-match .est-match-info .partido .match-div span div {
   height: 10px;
   width: 10px;
   background-color: #baa256;
   rotate: 45deg;
 }
-.est-match .est-match-info .partido .match-div span div:first-child {
+#pag-estadios .est-match .est-match-info .partido .match-div span div:first-child {
   height: 20px;
   width: 20px;
 }
-.est-match .est-match-info .partido .match-div span img {
+#pag-estadios .est-match .est-match-info .partido .match-div span img {
   width: 50%;
 }
-.est-match .est-match-info .partido .match-div span p {
+#pag-estadios .est-match .est-match-info .partido .match-div span p {
   color: #505050;
   font-size: 1.5rem;
 }
-
-.est-history-title {
+#pag-estadios .est-history-title {
   color: #8a1539;
   text-align: center;
   font-size: 2.8rem;
   font-weight: bold;
   margin: 3% 0;
 }
-
-.est-history {
+#pag-estadios .est-history {
   display: flex;
   flex-flow: row, wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.est-history .h-img {
+#pag-estadios .est-history .h-img {
   display: flex;
   flex-flow: column, wrap;
   justify-content: center;
@@ -1423,10 +1438,10 @@ footer .footer .footer-section img {
   height: 100%;
   padding: 1%;
 }
-.est-history .h-img img {
+#pag-estadios .est-history .h-img img {
   max-width: 100%;
 }
-.est-history .h-info {
+#pag-estadios .est-history .h-info {
   width: 30%;
   height: 100%;
   display: flex;
@@ -1434,15 +1449,15 @@ footer .footer .footer-section img {
   align-items: center;
   justify-content: center;
 }
-.est-history .h-info .separator {
+#pag-estadios .est-history .h-info .separator {
   margin: 15px 0;
 }
-.est-history .h-info span {
+#pag-estadios .est-history .h-info span {
   width: 80%;
   font-size: 2.5rem;
   color: #baa256;
 }
-.est-history .h-info p {
+#pag-estadios .est-history .h-info p {
   font-size: 1.4rem;
   width: 90%;
 }
@@ -2061,6 +2076,15 @@ footer .footer .footer-section img {
   #exp .des-doha button {
     margin: 3em 0;
   }
+  #exp .des-exp {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    font-size: 0.7em;
+  }
+  #exp .des-exp button {
+    margin: 3em 0;
+  }
   #exp .banner-exp {
     flex-flow: column wrap;
   }
@@ -2137,27 +2161,27 @@ footer .footer .footer-section img {
   #exp .pat-info button {
     font-size: 0.8em;
   }
-  .est-start {
+  #pag-estadios .est-start {
     justify-content: flex-end;
   }
-  .est-start h1 {
-    font-size: 5rem;
+  #pag-estadios .est-start h1 {
+    font-size: 3.5rem;
   }
-  .est-start p {
+  #pag-estadios .est-start p {
     font-size: 2rem;
     width: 80%;
   }
-  .est-match .est-match-title img {
+  #pag-estadios .est-match .est-match-title img {
     width: 70%;
   }
-  .est-match .est-match-info .partido {
+  #pag-estadios .est-match .est-match-info .partido {
     flex-direction: column;
   }
-  .est-match .est-match-info .partido .match-div {
+  #pag-estadios .est-match .est-match-info .partido .match-div {
     width: 90%;
   }
-  .stadiums-top h1 {
-    font-size: 3rem;
+  #pag-estadios .est-history-title {
+    display: none;
   }
   .btn-letra-grupos {
     flex-direction: column;
@@ -2273,36 +2297,56 @@ footer .footer .footer-section img {
        object-fit: fill;
     height: 100vh !important;
   }
-  .div-est .stadiums-main {
+  #Stadium .stadiums .stadiums-top h1 {
+    text-align: center;
+    font-size: 4em;
+    width: 90%;
+  }
+  #Stadium .stadiums .stadiums-top div {
+    background-color: #000;
+  }
+  #Stadium .stadiums .stadiums-top div p {
+    color: white;
+    font-size: 1.3em;
+  }
+  #Stadium .stadiums .box {
+    height: 10vh;
+  }
+  #Stadium .stadiums .box .lines {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #Stadium .div-est .stadiums-main {
     flex-flow: column-reverse nowrap;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
-    background: #020f2a;
+    background: #121212;
+    padding: 5% 10%;
   }
-  .div-est .stadiums-main .stadiums-main-info {
-    background: #020c22;
+  #Stadium .div-est .stadiums-main .stadiums-main-info {
     width: 100%;
-    padding: 50px 0;
+    padding: 3em 0;
   }
-  .div-est .stadiums-main .stadiums-main-info .part {
+  #Stadium .div-est .stadiums-main .stadiums-main-info .part {
     height: 40%;
   }
-  .div-est .stadiums-main .stadiums-main-info .btn-est {
+  #Stadium .div-est .stadiums-main .stadiums-main-info .btn-est {
     height: 70px;
   }
-  .div-est img {
-    max-width: 100%;
+  #Stadium .div-est img {
+    max-width: 100% !important;
   }
-  .est-history {
+  #pag-estadios .est-history {
     flex-direction: column;
     height: auto;
   }
-  .est-history .h-img {
+  #pag-estadios .est-history .h-img {
     width: 100%;
   }
-  .est-history .h-info {
+  #pag-estadios .est-history .h-info {
     width: 100%;
     padding: 5%;
   }
@@ -2424,6 +2468,52 @@ footer .footer .footer-section img {
   }
   .exp-com-top h1 {
     font-size: 4rem;
+  }
+  #Stadium .stadiums .stadiums-top h1 {
+    font-size: 2em;
+  }
+  #Stadium .div-est .stadiums-main {
+    padding: 3em 4%;
+  }
+  #Stadium .div-est .stadiums-main .stadiums-main-info {
+    background: #121212;
+    padding: 1em 0 0 0;
+  }
+  #Stadium .div-est .stadiums-main .stadiums-main-info .part-tittle {
+    color: #fff;
+  }
+  #Stadium .div-est .stadiums-main .stadiums-main-info h3 {
+    font-size: 2em;
+  }
+  #Stadium .div-est .stadiums-main .stadiums-main-info .separator {
+    margin: 0.5em 0;
+  }
+  #Stadium .div-est .stadiums-main .stadiums-main-info .btn-est {
+    background: #8a1539;
+    -webkit-clip-path: none;
+            clip-path: none;
+    padding: 1em 4em;
+    width: auto;
+    height: auto;
+    font-size: 1.5em;
+  }
+  #pag-estadios .est-info .est-ficha {
+    width: 80%;
+  }
+  #pag-estadios .est-info .est-ficha h2 {
+    font-size: 2.5em !important;
+  }
+  #pag-estadios .est-info .est-ficha h3 {
+    font-size: 1.6em;
+  }
+  #pag-estadios .est-match .est-match-info .partido span {
+    font-size: 0.8em !important;
+  }
+  #pag-estadios .est-match .est-match-info .partido p {
+    font-size: 0.7em !important;
+  }
+  #pag-estadios .est-history .h-info span {
+    font-size: 2em !important;
   }
 }
 .btn-nav {

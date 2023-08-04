@@ -97,7 +97,7 @@ function mostrarStadiums(items) {
                         </div>
                         <img style="clip-path: polygon(0 42%, 0 0, 100% 0, 100% 100%, 0 100%, 0 58%, 5% 50%);" src="${element.img}">
                     </div>
-                        <div class="separator-2-est" style="margin: 2% 0px;"></div>
+                    <div class="separator-est-end" ></div>
                 </div>     
         `
     });

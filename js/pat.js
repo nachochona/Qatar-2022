@@ -31,7 +31,7 @@ let Patrimonio = [
     nombre: "Doha en Bote",
     descripcion: "Con uno de los horizontes más impresionantes del mundo, Doha, la ciudad capital de Qatar deja una primera impresión inolvidable. Todo lo que ves se construyó después de 1971, cuando esta antigua aldea pescadora de perlas se convirtió en la capital, por lo que parece un set de filmación de un futuro no muy lejano.",
     img_a: "https://thumbs.dreamstime.com/b/botes-viejos-en-doha-qatar-addawhah-206340466.jpg",
-    img_b: "https://ecuco7.com/wp-content/uploads/2019/12/qatar-prohibiciones-turistas.jpg",
+    img_b: "https://www.mundodeportivo.com/files/article_gallery_microformat/uploads/2022/11/18/6377e93c3e8cf.jpeg",
     img_c: "https://img.lagaceta.com.ar/fotos/notas/2022/08/19/mundial-2022-hacer-entre-partido-partido-957553-181058.jpg",
 },
 ]

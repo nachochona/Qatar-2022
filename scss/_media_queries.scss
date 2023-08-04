@@ -41,6 +41,15 @@
             }
             
         }
+        .des-exp{
+            flex-direction: column;
+            height: auto;
+            padding: 0;
+            font-size: .7em;
+            button{
+                margin: 3em 0;
+            }
+        }
         .banner-exp{
             flex-flow: column wrap;
             .exp-b-img-p {
@@ -131,11 +140,11 @@
         
     }
     
-    
-    .est-start {
+    #pag-estadios{
+        .est-start {
         justify-content: flex-end;
         h1 {
-            font-size: 5rem
+            font-size: 3.5rem
         }
 
         p {
@@ -143,7 +152,7 @@
             width: 80%;
         }
     }
-    .est-match{
+      .est-match{
         .est-match-title{
             img{
                 width: 70%;
@@ -160,11 +169,13 @@
         }
        
     }
-    .stadiums-top{
-        h1{
-            font-size: 3rem;
-        }
+    .est-history-title{
+        display: none;
+    }  
     }
+    
+    
+    
     .btn-letra-grupos{
         flex-direction: column;
         align-items: center;
@@ -298,32 +309,65 @@
         }
     }
 
-
-    .div-est{
-        .stadiums-main{
-            flex-flow: column-reverse nowrap;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: auto;
-            background: $azul;
-            .stadiums-main-info{
-                background: $azul-oscuro;
-                width: 100%;
-                padding: 50px 0;
-                .part{
-                    height: 40%;
+    #Stadium{
+        .stadiums{
+            .stadiums-top{
+            
+                h1{
+                    text-align: center;
+                    font-size: 4em;
+                    width: 90%;
                 }
-                .btn-est{
-                    height: 70px;
+                div{
+                    background-color: #000;
+                    p{
+                        color: white;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+            .box{
+                height: 10vh;
+                .lines{
+                    display: none;
+
+                    opacity: 0;
+                    visibility: hidden;
                 }
             }
         }
-        img{
-            max-width: 100%;
+
+
+        .div-est{
+            .stadiums-main{
+                flex-flow: column-reverse nowrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                background: $gris-dark;
+                padding: 5% 10% ;
+                .stadiums-main-info{
+                    //background: $gris-dark;
+                    width: 100%;
+                    padding: 3em 0;
+                    .part{
+                        height: 40%;
+                    }
+                    .btn-est{
+                        height: 70px;
+                    }
+                }
+            }
+            img{
+                max-width: 100% !important;
+            }
         }
+       
     }
-    .est-history {
+
+    #pag-estadios{
+      .est-history {
         flex-direction: column;
         height: auto;
         
@@ -334,7 +378,9 @@
             width: 100%;
             padding: 5%;
         }
+    }  
     }
+    
     .div-grupo{
         .div-grupo-1{
             flex-direction: column;
@@ -505,6 +551,85 @@
         }
     }
 
+    
+
+
+    #Stadium{
+        .stadiums{
+            .stadiums-top{
+            
+                h1{
+                    font-size: 2em;
+                }
+            }
+        }
+       
+        .div-est{
+            .stadiums-main{
+                padding: 3em 4%;
+                .stadiums-main-info{
+                    background: $gris-dark;
+                    padding: 1em 0 0 0;
+                    .part-tittle{
+                        color: #fff;
+                    }
+                    h3{
+                        font-size: 2em;
+                    }
+                    .separator{
+                        margin: .5em 0;
+                    }
+                    .btn-est{
+                        background: $base;
+                        clip-path: none;
+                        padding: 1em 4em;
+                        width: auto;
+                        height: auto;
+                        font-size: 1.5em;
+                    }
+                    
+                }
+            }
+
+        }
+    }
+
+    #pag-estadios{
+      .est-info{
+        .est-ficha{
+            width: 80%;
+            h2{
+              font-size: 2.5em !important;  
+            }
+            h3{
+                font-size: 1.6em;
+            }
+            
+        }
+    }
+    .est-match{
+        .est-match-info{
+            .partido{
+                span{
+                    font-size: .8em !important;
+                }
+                p{
+                    font-size: .7em !important;
+                }
+            }
+        }
+    }  
+    .est-history{
+        .h-info{
+            span{
+                font-size: 2em !important;
+            }
+            
+        }
+    }
+    }
+
+    
     
     
 
