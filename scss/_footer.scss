@@ -4,7 +4,7 @@ footer{
         @include flexible(flex, row, wrap, space-evenly, center);
         background-color: $oro-2;
         img{
-            max-width: 8em;
+            max-width: 7em;
         }
     }
     .footer{
